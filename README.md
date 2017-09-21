@@ -1,2 +1,2 @@
 # Device-Driver-Assistant-Updater
-#备用
+备用仓库
