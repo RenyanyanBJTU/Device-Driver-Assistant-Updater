@@ -1,0 +1,44 @@
+page
+  page_to_balloon_pfn:
+    drivers/virtio/virtio_balloon.c:75
+  set_page_pfns:
+    drivers/virtio/virtio_balloon.c:113
+virtqueue
+  balloon_ack:
+    drivers/virtio/virtio_balloon.c:90
+  tell_host:
+    drivers/virtio/virtio_balloon.c:97
+  stats_request:
+    drivers/virtio/virtio_balloon.c:228
+virtio_balloon
+  tell_host:
+    drivers/virtio/virtio_balloon.c:97
+  fill_balloon:
+    drivers/virtio/virtio_balloon.c:123
+  leak_balloon:
+    drivers/virtio/virtio_balloon.c:165
+  update_stat:
+    drivers/virtio/virtio_balloon.c:189
+  update_balloon_stats:
+    drivers/virtio/virtio_balloon.c:199
+  stats_handle_request:
+    drivers/virtio/virtio_balloon.c:236
+  towards_target:
+    drivers/virtio/virtio_balloon.c:261
+  update_balloon_size:
+    drivers/virtio/virtio_balloon.c:273
+  init_vqs:
+    drivers/virtio/virtio_balloon.c:307
+  remove_common:
+    drivers/virtio/virtio_balloon.c:380
+virtio_device
+  virtballoon_changed:
+    drivers/virtio/virtio_balloon.c:254
+  virtballoon_probe:
+    drivers/virtio/virtio_balloon.c:342
+  virtballoon_remove:
+    drivers/virtio/virtio_balloon.c:393
+  virtballoon_freeze:
+    drivers/virtio/virtio_balloon.c:403
+  virtballoon_restore:
+    drivers/virtio/virtio_balloon.c:416

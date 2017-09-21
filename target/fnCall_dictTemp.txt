@@ -1,0 +1,208 @@
+BUILD_BUG_ON
+  page_to_balloon_pfn:
+    drivers/virtio/virtio_balloon.c:79:
+BUG_ON
+  balloon_pfn_to_page:
+    drivers/virtio/virtio_balloon.c:86:
+  update_stat:
+    drivers/virtio/virtio_balloon.c:192:
+__builtin_unreachable
+  balloon_pfn_to_page:
+    drivers/virtio/virtio_balloon.c:86:2
+  tell_host:
+    drivers/virtio/virtio_balloon.c:106:3
+  update_stat:
+    drivers/virtio/virtio_balloon.c:192:2
+  stats_handle_request:
+    drivers/virtio/virtio_balloon.c:250:3
+  init_vqs:
+    drivers/virtio/virtio_balloon.c:336:4
+pfn_to_page
+  balloon_pfn_to_page:
+    drivers/virtio/virtio_balloon.c:87:
+wake_up
+  balloon_ack:
+    drivers/virtio/virtio_balloon.c:94:
+  stats_request:
+    drivers/virtio/virtio_balloon.c:233:
+  virtballoon_changed:
+    drivers/virtio/virtio_balloon.c:258:
+__wake_up
+  balloon_ack:
+    drivers/virtio/virtio_balloon.c:94:2
+  stats_request:
+    drivers/virtio/virtio_balloon.c:233:2
+  virtballoon_changed:
+    drivers/virtio/virtio_balloon.c:258:2
+sg_init_one
+  tell_host:
+    drivers/virtio/virtio_balloon.c:102:13
+  stats_handle_request:
+    drivers/virtio/virtio_balloon.c:248:13
+  init_vqs:
+    drivers/virtio/virtio_balloon.c:333:14
+virtqueue_add_buf
+  tell_host:
+    drivers/virtio/virtio_balloon.c:105:23
+  stats_handle_request:
+    drivers/virtio/virtio_balloon.c:249:23
+  init_vqs:
+    drivers/virtio/virtio_balloon.c:334:24
+BUG
+  tell_host:
+    drivers/virtio/virtio_balloon.c:106:
+  stats_handle_request:
+    drivers/virtio/virtio_balloon.c:250:
+  init_vqs:
+    drivers/virtio/virtio_balloon.c:336:
+virtqueue_kick
+  tell_host:
+    drivers/virtio/virtio_balloon.c:107:16
+  stats_handle_request:
+    drivers/virtio/virtio_balloon.c:251:16
+  init_vqs:
+    drivers/virtio/virtio_balloon.c:337:17
+wait_event
+  tell_host:
+    drivers/virtio/virtio_balloon.c:110:
+virtqueue_get_buf
+  tell_host:
+    drivers/virtio/virtio_balloon.c:110:41
+  stats_handle_request:
+    drivers/virtio/virtio_balloon.c:246:24
+prepare_to_wait
+  tell_host:
+    drivers/virtio/virtio_balloon.c:110:2
+  balloon:
+    drivers/virtio/virtio_balloon.c:291:3
+schedule
+  tell_host:
+    drivers/virtio/virtio_balloon.c:110:2
+  balloon:
+    drivers/virtio/virtio_balloon.c:291:3
+finish_wait
+  tell_host:
+    drivers/virtio/virtio_balloon.c:110:2
+  balloon:
+    drivers/virtio/virtio_balloon.c:291:3
+printk_ratelimit
+  fill_balloon:
+    drivers/virtio/virtio_balloon.c:133:
+min
+  fill_balloon:
+    drivers/virtio/virtio_balloon.c:126:
+  leak_balloon:
+    drivers/virtio/virtio_balloon.c:170:
+__printk_ratelimit
+  fill_balloon:
+    drivers/virtio/virtio_balloon.c:133:8
+KERN_INFO
+  fill_balloon:
+    drivers/virtio/virtio_balloon.c:134:1
+dev_printk
+  fill_balloon:
+    drivers/virtio/virtio_balloon.c:134:15
+msleep
+  fill_balloon:
+    drivers/virtio/virtio_balloon.c:138:10
+list_add
+  fill_balloon:
+    drivers/virtio/virtio_balloon.c:144:11
+__free_page
+  release_pages_by_pfn:
+    drivers/virtio/virtio_balloon.c:160:
+__free_pages
+  release_pages_by_pfn:
+    drivers/virtio/virtio_balloon.c:160:3
+list_first_entry
+  leak_balloon:
+    drivers/virtio/virtio_balloon.c:174:1
+list_del
+  leak_balloon:
+    drivers/virtio/virtio_balloon.c:175:11
+__builtin_expect
+  update_stat:
+    drivers/virtio/virtio_balloon.c:192:2
+all_vm_events
+  update_balloon_stats:
+    drivers/virtio/virtio_balloon.c:205:15
+si_meminfo
+  update_balloon_stats:
+    drivers/virtio/virtio_balloon.c:206:12
+pages_to_bytes
+  update_balloon_stats:
+    drivers/virtio/virtio_balloon.c:209:
+    drivers/virtio/virtio_balloon.c:211:
+    drivers/virtio/virtio_balloon.c:215:
+    drivers/virtio/virtio_balloon.c:217:
+set_freezable
+  balloon:
+    drivers/virtio/virtio_balloon.c:286:15
+try_to_freeze
+  balloon:
+    drivers/virtio/virtio_balloon.c:290:16
+wait_event_interruptible
+  balloon:
+    drivers/virtio/virtio_balloon.c:291:
+kthread_should_stop
+  balloon:
+    drivers/virtio/virtio_balloon.c:294:29
+    drivers/virtio/virtio_balloon.c:287:29
+current
+  balloon:
+    drivers/virtio/virtio_balloon.c:295:1
+freezing
+  balloon:
+    drivers/virtio/virtio_balloon.c:295:18
+get_current
+  balloon:
+    drivers/virtio/virtio_balloon.c:295:19
+    drivers/virtio/virtio_balloon.c:291:3
+signal_pending
+  balloon:
+    drivers/virtio/virtio_balloon.c:291:3
+virtio_has_feature
+  init_vqs:
+    drivers/virtio/virtio_balloon.c:318:27
+    drivers/virtio/virtio_balloon.c:325:24
+kmalloc
+  virtballoon_probe:
+    drivers/virtio/virtio_balloon.c:347:27
+INIT_LIST_HEAD
+  virtballoon_probe:
+    drivers/virtio/virtio_balloon.c:353:16
+init_waitqueue_head
+  virtballoon_probe:
+    drivers/virtio/virtio_balloon.c:355:
+    drivers/virtio/virtio_balloon.c:356:
+__init_waitqueue_head
+  virtballoon_probe:
+    drivers/virtio/virtio_balloon.c:355:2
+    drivers/virtio/virtio_balloon.c:356:2
+kthread_run
+  virtballoon_probe:
+    drivers/virtio/virtio_balloon.c:364:1
+IS_ERR
+  virtballoon_probe:
+    drivers/virtio/virtio_balloon.c:364:15
+    drivers/virtio/virtio_balloon.c:365:12
+wake_up_process
+  virtballoon_probe:
+    drivers/virtio/virtio_balloon.c:364:15
+PTR_ERR
+  virtballoon_probe:
+    drivers/virtio/virtio_balloon.c:366:16
+kfree
+  virtballoon_probe:
+    drivers/virtio/virtio_balloon.c:375:7
+  virtballoon_remove:
+    drivers/virtio/virtio_balloon.c:399:7
+kthread_stop
+  virtballoon_remove:
+    drivers/virtio/virtio_balloon.c:397:14
+register_virtio_driver
+  init:
+    drivers/virtio/virtio_balloon.c:453:31
+unregister_virtio_driver
+  fini:
+    drivers/virtio/virtio_balloon.c:458:26

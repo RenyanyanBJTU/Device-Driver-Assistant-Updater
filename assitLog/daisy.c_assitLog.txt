@@ -1,0 +1,31 @@
+filename to process: daisy.c
+more info about this log description to read assitlog_description.txt
+
+
+===== A  level =====
+total count: 2
+
+KERN_INFO 	( diff_type: Del type: macro file: include/linux/printk.h )
+	-- #define KERN_INFO "<6>"
+
+  parport_daisy_init:
+    drivers/parport/daisy.c:112:1
+    drivers/parport/daisy.c:126:1
+
+KERN_DEBUG 	( diff_type: Del type: macro file: include/linux/printk.h )
+	-- #define KERN_DEBUG "<7>"
+
+	daisy.c: 288:		DPRINTK(KERN_DEBUG "%s: cpp_daisy: aa5500ff(%02x)\n",
+	daisy.c: 299:		DPRINTK(KERN_DEBUG "%s: cpp_daisy: aa5500ff87(%02x)\n",
+	daisy.c: 335:		DPRINTK(KERN_DEBUG "%s: cpp_mux: aa55f00f52ad%02x(%02x)\n",
+	daisy.c: 421:		DPRINTK(KERN_DEBUG "%s: assign_addrs: aa5500ff(%02x)\n",
+	daisy.c: 432:		DPRINTK(KERN_DEBUG "%s: assign_addrs: aa5500ff87(%02x)\n",
+	daisy.c: 470:	DPRINTK(KERN_DEBUG "%s: Found %d daisy-chained devices\n", port->name,
+
+
+===== B  level =====
+total count: 0
+
+
+===== C  level =====
+total count: 0

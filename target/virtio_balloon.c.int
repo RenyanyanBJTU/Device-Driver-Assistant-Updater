@@ -1,0 +1,1588 @@
+void * __memcpy (void *to,void *from,size_t n) arch/x86/include/asm/string_32.h:32:30 45:1 1
+void * __constant_memcpy (void *to,void *from,size_t n) arch/x86/include/asm/string_32.h:51:30 142:1 82
+void * __memset_generic (void *s,char c,size_t count) arch/x86/include/asm/string_32.h:207:21 216:1 621
+void * __constant_c_memset (void *s,long unsigned int c,size_t count) arch/x86/include/asm/string_32.h:227:7 242:1 683
+void * __constant_c_and_count_memset (void *s,long unsigned int pattern,size_t count) arch/x86/include/asm/string_32.h:257:7 311:1 753
+char * strstrip (char *str) include/linux/string.h:69:34 72:1 1058
+bool strstarts (char *str,char *prefix) include/linux/string.h:143:20 146:1 1077
+bool __static_cpu_has (u16 bit) arch/x86/include/asm/cpufeature.h:342:36 381:1 1109
+void apply_paravirt (structBUG paravirt_patch_site *start,structBUG paravirt_patch_site *end) arch/x86/include/asm/alternative.h:159:20 161:1 1141
+void set_bit (unsigned int nr,long unsigned int *addr) arch/x86/include/asm/bitops.h:62:1 73:1 1155
+void __set_bit (int nr,long unsigned int *addr) arch/x86/include/asm/bitops.h:84:20 87:1 1226
+void clear_bit (int nr,long unsigned int *addr) arch/x86/include/asm/bitops.h:100:1 111:1 1257
+void clear_bit_unlock (unsigned int nr,long unsigned int *addr) arch/x86/include/asm/bitops.h:121:20 125:1 1326
+void __clear_bit (int nr,long unsigned int *addr) arch/x86/include/asm/bitops.h:127:20 130:1 1355
+void __clear_bit_unlock (unsigned int nr,long unsigned int *addr) arch/x86/include/asm/bitops.h:144:20 148:1 1385
+void __change_bit (int nr,long unsigned int *addr) arch/x86/include/asm/bitops.h:162:20 165:1 1414
+void change_bit (int nr,long unsigned int *addr) arch/x86/include/asm/bitops.h:176:20 187:1 1444
+int test_and_set_bit (int nr,long unsigned int *addr) arch/x86/include/asm/bitops.h:197:19 205:1 1512
+int test_and_set_bit_lock (int nr,long unsigned int *addr) arch/x86/include/asm/bitops.h:215:1 218:1 1558
+int __test_and_set_bit (int nr,long unsigned int *addr) arch/x86/include/asm/bitops.h:229:19 238:1 1581
+int test_and_clear_bit (int nr,long unsigned int *addr) arch/x86/include/asm/bitops.h:248:19 257:1 1626
+int __test_and_clear_bit (int nr,long unsigned int *addr) arch/x86/include/asm/bitops.h:268:19 277:1 1672
+int __test_and_change_bit (int nr,long unsigned int *addr) arch/x86/include/asm/bitops.h:280:19 290:1 1717
+int test_and_change_bit (int nr,long unsigned int *addr) arch/x86/include/asm/bitops.h:300:19 309:1 1763
+int constant_test_bit (unsigned int nr,long unsigned int *addr) arch/x86/include/asm/bitops.h:311:28 315:1 1809
+int variable_test_bit (int nr,long unsigned int *addr) arch/x86/include/asm/bitops.h:317:19 327:1 1846
+int __ffs (long unsigned int word) arch/x86/include/asm/bitops.h:349:29 355:1 1891
+int ffz (long unsigned int word) arch/x86/include/asm/bitops.h:363:29 369:1 1921
+int __fls (long unsigned int word) arch/x86/include/asm/bitops.h:377:29 383:1 1952
+int ffs (int x) arch/x86/include/asm/bitops.h:399:19 428:1 1982
+int fls (int x) arch/x86/include/asm/bitops.h:441:19 470:1 2022
+int fls64 (__u64 x) include/asm-generic/bitops/fls64.h:18:28 24:1 2062
+int sched_find_first_bit (long unsigned int *b) include/asm-generic/bitops/sched.h:12:19 29:1 2103
+int __arch_hweight32 (unsigned int w) arch/x86/include/asm/arch_hweight.h:24:28 33:1 2197
+int __arch_hweight16 (unsigned int w) arch/x86/include/asm/arch_hweight.h:35:28 38:1 2231
+int __arch_hweight8 (unsigned int w) arch/x86/include/asm/arch_hweight.h:40:28 43:1 2250
+int __arch_hweight64 (__u64 w) arch/x86/include/asm/arch_hweight.h:45:29 59:1 2269
+__u32 __arch_swab32 (__u32 val) arch/x86/include/asm/swab.h:7:41 26:1 2308
+__u64 __arch_swab64 (__u64 val) arch/x86/include/asm/swab.h:29:41 58:1 2338
+__u16 __fswab16 (__u16 val) include/linux/swab.h:46:41 53:1 2429
+__u32 __fswab32 (__u32 val) include/linux/swab.h:55:41 62:1 2453
+__u64 __fswab64 (__u64 val) include/linux/swab.h:64:41 75:1 2470
+__u32 __fswahw32 (__u32 val) include/linux/swab.h:77:41 84:1 2487
+__u32 __fswahb32 (__u32 val) include/linux/swab.h:86:41 93:1 2502
+__u16 __swab16p (__u16 *p) include/linux/swab.h:148:21 155:1 2526
+__u32 __swab32p (__u32 *p) include/linux/swab.h:161:21 168:1 2572
+__u64 __swab64p (__u64 *p) include/linux/swab.h:174:21 181:1 2633
+__u32 __swahw32p (__u32 *p) include/linux/swab.h:189:21 196:1 2730
+__u32 __swahb32p (__u32 *p) include/linux/swab.h:204:21 211:1 2766
+void __swab16s (__u16 *p) include/linux/swab.h:217:20 224:1 2813
+void __swab32s (__u32 *p) include/linux/swab.h:229:20 236:1 2833
+void __swab64s (__u64 *p) include/linux/swab.h:242:20 249:1 2853
+void __swahw32s (__u32 *p) include/linux/swab.h:257:20 264:1 2873
+void __swahb32s (__u32 *p) include/linux/swab.h:272:20 279:1 2893
+__le64 __cpu_to_le64p (__u64 *p) include/linux/byteorder/little_endian.h:43:22 46:1 2913
+__u64 __le64_to_cpup (__le64 *p) include/linux/byteorder/little_endian.h:47:21 50:1 2929
+__le32 __cpu_to_le32p (__u32 *p) include/linux/byteorder/little_endian.h:51:22 54:1 2945
+__u32 __le32_to_cpup (__le32 *p) include/linux/byteorder/little_endian.h:55:21 58:1 2961
+__le16 __cpu_to_le16p (__u16 *p) include/linux/byteorder/little_endian.h:59:22 62:1 2977
+__u16 __le16_to_cpup (__le16 *p) include/linux/byteorder/little_endian.h:63:21 66:1 2993
+__be64 __cpu_to_be64p (__u64 *p) include/linux/byteorder/little_endian.h:67:22 70:1 3009
+__u64 __be64_to_cpup (__be64 *p) include/linux/byteorder/little_endian.h:71:21 74:1 3028
+__be32 __cpu_to_be32p (__u32 *p) include/linux/byteorder/little_endian.h:75:22 78:1 3047
+__u32 __be32_to_cpup (__be32 *p) include/linux/byteorder/little_endian.h:79:21 82:1 3066
+__be16 __cpu_to_be16p (__u16 *p) include/linux/byteorder/little_endian.h:83:22 86:1 3085
+__u16 __be16_to_cpup (__be16 *p) include/linux/byteorder/little_endian.h:87:21 90:1 3104
+void le16_add_cpu (__le16 *var,u16 val) include/linux/byteorder/generic.h:143:20 146:1 3123
+void le32_add_cpu (__le32 *var,u32 val) include/linux/byteorder/generic.h:148:20 151:1 3147
+void le64_add_cpu (__le64 *var,u64 val) include/linux/byteorder/generic.h:153:20 156:1 3170
+void be16_add_cpu (__be16 *var,u16 val) include/linux/byteorder/generic.h:158:20 161:1 3194
+void be32_add_cpu (__be32 *var,u32 val) include/linux/byteorder/generic.h:163:20 166:1 3388
+void be64_add_cpu (__be64 *var,u64 val) include/linux/byteorder/generic.h:168:20 171:1 3733
+int find_next_zero_bit_le (void *addr,long unsigned int size,long unsigned int offset) include/asm-generic/bitops/le.h:11:29 15:1 4686
+int find_next_bit_le (void *addr,long unsigned int size,long unsigned int offset) include/asm-generic/bitops/le.h:17:29 21:1 4715
+int find_first_zero_bit_le (void *addr,long unsigned int size) include/asm-generic/bitops/le.h:23:29 27:1 4744
+int test_bit_le (int nr,void *addr) include/asm-generic/bitops/le.h:52:19 55:1 4768
+void __set_bit_le (int nr,void *addr) include/asm-generic/bitops/le.h:57:20 60:1 4811
+void __clear_bit_le (int nr,void *addr) include/asm-generic/bitops/le.h:62:20 65:1 4832
+int test_and_set_bit_le (int nr,void *addr) include/asm-generic/bitops/le.h:67:19 70:1 4853
+int test_and_clear_bit_le (int nr,void *addr) include/asm-generic/bitops/le.h:72:19 75:1 4877
+int __test_and_set_bit_le (int nr,void *addr) include/asm-generic/bitops/le.h:77:19 80:1 4901
+int __test_and_clear_bit_le (int nr,void *addr) include/asm-generic/bitops/le.h:82:19 85:1 4925
+int get_bitmask_order (unsigned int count) include/linux/bitops.h:46:23 52:1 4949
+int get_count_order (unsigned int count) include/linux/bitops.h:54:23 62:1 4977
+int hweight_long (long unsigned int w) include/linux/bitops.h:64:29 67:1 5022
+__u64 rol64 (__u64 word,unsigned int shift) include/linux/bitops.h:74:21 77:1 5354
+__u64 ror64 (__u64 word,unsigned int shift) include/linux/bitops.h:84:21 87:1 5373
+__u32 rol32 (__u32 word,unsigned int shift) include/linux/bitops.h:94:21 97:1 5392
+__u32 ror32 (__u32 word,unsigned int shift) include/linux/bitops.h:104:21 107:1 5411
+__u16 rol16 (__u16 word,unsigned int shift) include/linux/bitops.h:114:21 117:1 5430
+__u16 ror16 (__u16 word,unsigned int shift) include/linux/bitops.h:124:21 127:1 5464
+__u8 rol8 (__u8 word,unsigned int shift) include/linux/bitops.h:134:20 137:1 5498
+__u8 ror8 (__u8 word,unsigned int shift) include/linux/bitops.h:144:20 147:1 5532
+__s32 sign_extend32 (__u32 value,int index) include/linux/bitops.h:154:21 158:1 5566
+int fls_long (long unsigned int l) include/linux/bitops.h:160:24 165:1 5597
+int __ffs64 (u64 word) include/linux/bitops.h:175:29 184:1 5631
+int __ilog2_u32 (u32 n) include/linux/log2.h:32:5 35:1 5671
+int __ilog2_u64 (u64 n) include/linux/log2.h:40:5 43:1 5691
+bool is_power_of_2 (long unsigned int n) include/linux/log2.h:52:6 55:1 5710
+int __roundup_pow_of_two (long unsigned int n) include/linux/log2.h:61:15 64:1 5736
+int __rounddown_pow_of_two (long unsigned int n) include/linux/log2.h:70:15 73:1 5758
+void console_silent () include/linux/printk.h:34:20 37:1 5780
+void console_verbose () include/linux/printk.h:39:20 43:1 5791
+int no_printk (char *fmt) include/linux/printk.h:86:5 89:1 5810
+u64 div_u64_rem (u64 dividend,u32 divisor,u32 *remainder) arch/x86/include/asm/div64.h:42:19 59:1 5823
+void __might_sleep (char *file,int line,int preempt_offset) include/linux/kernel.h:164:22 165:8 5952
+void might_fault () include/linux/kernel.h:197:20 200:1 5968
+int kstrtoul (char *s,unsigned int base,long unsigned int *res) include/linux/kernel.h:223:32 234:1 5977
+int kstrtol (char *s,unsigned int base,long int *res) include/linux/kernel.h:236:32 247:1 6022
+int kstrtou64 (char *s,unsigned int base,u64 *res) include/linux/kernel.h:252:32 255:1 6067
+int kstrtos64 (char *s,unsigned int base,s64 *res) include/linux/kernel.h:257:32 260:1 6097
+int kstrtou32 (char *s,unsigned int base,u32 *res) include/linux/kernel.h:262:32 265:1 6127
+int kstrtos32 (char *s,unsigned int base,s32 *res) include/linux/kernel.h:267:32 270:1 6157
+int kstrtou64_from_user (char *s,size_t count,unsigned int base,u64 *res) include/linux/kernel.h:288:32 291:1 6187
+int kstrtos64_from_user (char *s,size_t count,unsigned int base,s64 *res) include/linux/kernel.h:293:32 296:1 6222
+int kstrtou32_from_user (char *s,size_t count,unsigned int base,u32 *res) include/linux/kernel.h:298:32 301:1 6257
+int kstrtos32_from_user (char *s,size_t count,unsigned int base,s32 *res) include/linux/kernel.h:303:32 306:1 6292
+char * hex_byte_pack (char *buf,u8 byte) include/linux/kernel.h:400:21 405:1 6327
+char * pack_hex_byte (char *buf,u8 byte) include/linux/kernel.h:407:35 410:1 6374
+void ____trace_printk_check_format (char *fmt) include/linux/kernel.h:457:6 459:1 6399
+int is_warning_bug (structBUG bug_entry *bug) include/linux/bug.h:85:19 88:1 6409
+phys_addr_t get_max_mapped () arch/x86/include/asm/page_types.h:49:27 52:1 6430
+void clear_page (void *page) arch/x86/include/asm/page_32.h:39:20 42:1 6444
+void copy_page (void *to,void *from) arch/x86/include/asm/page_32.h:44:20 47:1 6461
+void clear_user_page (void *page,long unsigned int vaddr,structBUG page *pg) arch/x86/include/asm/page.h:20:20 24:1 6484
+void copy_user_page (void *to,void *from,long unsigned int vaddr,structBUG page *topage) arch/x86/include/asm/page.h:26:20 30:1 6506
+int __get_order (long unsigned int size) include/asm-generic/getorder.h:13:5 25:1 6534
+int get_limit (long unsigned int segment) arch/x86/include/asm/segment.h:264:29 269:1 6573
+int regs_return_value (structBUG pt_regs *regs) arch/x86/include/asm/ptrace.h:152:29 155:1 6609
+int user_mode (structBUG pt_regs *regs) arch/x86/include/asm/ptrace.h:164:19 171:1 6627
+int user_mode_vm (structBUG pt_regs *regs) arch/x86/include/asm/ptrace.h:173:19 181:1 6649
+int v8086_mode (structBUG pt_regs *regs) arch/x86/include/asm/ptrace.h:183:19 190:1 6680
+int kernel_stack_pointer (structBUG pt_regs *regs) arch/x86/include/asm/ptrace.h:215:29 222:1 6701
+int instruction_pointer (structBUG pt_regs *regs) include/asm-generic/ptrace.h:22:29 25:1 6721
+void instruction_pointer_set (structBUG pt_regs *regs,long unsigned int val) include/asm-generic/ptrace.h:26:20 30:1 6739
+int user_stack_pointer (structBUG pt_regs *regs) include/asm-generic/ptrace.h:44:29 47:1 6760
+void user_stack_pointer_set (structBUG pt_regs *regs,long unsigned int val) include/asm-generic/ptrace.h:48:20 52:1 6778
+int frame_pointer (structBUG pt_regs *regs) include/asm-generic/ptrace.h:62:29 65:1 6799
+void frame_pointer_set (structBUG pt_regs *regs,long unsigned int val) include/asm-generic/ptrace.h:66:20 70:1 6817
+int regs_get_register (structBUG pt_regs *regs,unsigned int offset) arch/x86/include/asm/ptrace.h:244:29 250:1 6838
+int regs_within_kernel_stack (structBUG pt_regs *regs,long unsigned int addr) arch/x86/include/asm/ptrace.h:260:19 265:1 6880
+int regs_get_kernel_stack_nth (structBUG pt_regs *regs,unsigned int n) arch/x86/include/asm/ptrace.h:276:29 285:1 6908
+int x86_this_cpu_constant_test_bit (unsigned int nr,long unsigned int *addr) arch/x86/include/asm/percpu.h:502:28 512:1 6959
+int x86_this_cpu_variable_test_bit (int nr,long unsigned int *addr) arch/x86/include/asm/percpu.h:514:19 525:1 7110
+task_struct * get_current () arch/x86/include/asm/current.h:12:44 15:1 7155
+pgd_t native_make_pgd (pgdval_t val) arch/x86/include/asm/pgtable_types.h:196:21 199:1 7285
+pgdval_t native_pgd_val (pgd_t pgd) arch/x86/include/asm/pgtable_types.h:201:24 204:1 7300
+pgdval_t pgd_flags (pgd_t pgd) arch/x86/include/asm/pgtable_types.h:206:24 209:1 7316
+int pgd_none (pgd_t pgd) include/asm-generic/pgtable-nopud.h:25:19 25:1 7335
+int pgd_bad (pgd_t pgd) include/asm-generic/pgtable-nopud.h:26:19 26:1 7347
+int pgd_present (pgd_t pgd) include/asm-generic/pgtable-nopud.h:27:19 27:1 7359
+void pgd_clear (pgd_t *pgd) include/asm-generic/pgtable-nopud.h:28:20 28:1 7371
+pud_t * pud_offset (pgd_t *pgd,long unsigned int address) include/asm-generic/pgtable-nopud.h:38:23 41:1 7381
+pudval_t native_pud_val (pud_t pud) arch/x86/include/asm/pgtable_types.h:226:24 229:1 7400
+pmd_t native_make_pmd (pmdval_t val) arch/x86/include/asm/pgtable_types.h:235:21 238:1 7421
+pmdval_t native_pmd_val (pmd_t pmd) arch/x86/include/asm/pgtable_types.h:240:24 243:1 7436
+pudval_t pud_flags (pud_t pud) arch/x86/include/asm/pgtable_types.h:253:24 256:1 7452
+pmdval_t pmd_flags (pmd_t pmd) arch/x86/include/asm/pgtable_types.h:258:24 261:1 7471
+pte_t native_make_pte (pteval_t val) arch/x86/include/asm/pgtable_types.h:263:21 266:1 7490
+pteval_t native_pte_val (pte_t pte) arch/x86/include/asm/pgtable_types.h:268:24 271:1 7505
+pteval_t pte_flags (pte_t pte) arch/x86/include/asm/pgtable_types.h:273:24 276:1 7521
+void bitmap_zero (long unsigned int *dst,int nbits) include/linux/bitmap.h:159:20 167:1 7540
+void bitmap_fill (long unsigned int *dst,int nbits) include/linux/bitmap.h:169:20 177:1 7588
+void bitmap_copy (long unsigned int *dst,long unsigned int *src,int nbits) include/linux/bitmap.h:179:20 188:1 7666
+int bitmap_and (long unsigned int *dst,long unsigned int *src1,long unsigned int *src2,int nbits) include/linux/bitmap.h:190:19 196:1 7722
+void bitmap_or (long unsigned int *dst,long unsigned int *src1,long unsigned int *src2,int nbits) include/linux/bitmap.h:198:20 205:1 7791
+void bitmap_xor (long unsigned int *dst,long unsigned int *src1,long unsigned int *src2,int nbits) include/linux/bitmap.h:207:20 214:1 7850
+int bitmap_andnot (long unsigned int *dst,long unsigned int *src1,long unsigned int *src2,int nbits) include/linux/bitmap.h:216:19 222:1 7909
+void bitmap_complement (long unsigned int *dst,long unsigned int *src,int nbits) include/linux/bitmap.h:224:20 231:1 7979
+int bitmap_equal (long unsigned int *src1,long unsigned int *src2,int nbits) include/linux/bitmap.h:233:19 240:1 8046
+int bitmap_intersects (long unsigned int *src1,long unsigned int *src2,int nbits) include/linux/bitmap.h:242:19 249:1 8121
+int bitmap_subset (long unsigned int *src1,long unsigned int *src2,int nbits) include/linux/bitmap.h:251:19 258:1 8196
+int bitmap_empty (long unsigned int *src,int nbits) include/linux/bitmap.h:260:19 266:1 8272
+int bitmap_full (long unsigned int *src,int nbits) include/linux/bitmap.h:268:19 274:1 8336
+int bitmap_weight (long unsigned int *src,int nbits) include/linux/bitmap.h:276:19 281:1 8401
+void bitmap_shift_right (long unsigned int *dst,long unsigned int *src,int n,int nbits) include/linux/bitmap.h:283:20 290:1 8470
+void bitmap_shift_left (long unsigned int *dst,long unsigned int *src,int n,int nbits) include/linux/bitmap.h:292:20 299:1 8525
+int bitmap_parse (char *buf,unsigned int buflen,long unsigned int *maskp,int nmaskbits) include/linux/bitmap.h:301:19 305:1 8599
+int cpumask_check (unsigned int cpu) include/linux/cpumask.h:105:28 111:1 8634
+int cpumask_first (structBUG cpumask *srcp) include/linux/cpumask.h:158:28 161:1 8647
+int cpumask_next (int n,structBUG cpumask *srcp) include/linux/cpumask.h:170:28 176:1 8673
+int cpumask_next_zero (int n,structBUG cpumask *srcp) include/linux/cpumask.h:185:28 191:1 8721
+void cpumask_set_cpu (unsigned int cpu,structBUG cpumask *dstp) include/linux/cpumask.h:255:20 258:1 8769
+void cpumask_clear_cpu (int cpu,structBUG cpumask *dstp) include/linux/cpumask.h:265:20 268:1 8799
+int cpumask_test_and_set_cpu (int cpu,structBUG cpumask *cpumask) include/linux/cpumask.h:287:19 290:1 8831
+int cpumask_test_and_clear_cpu (int cpu,structBUG cpumask *cpumask) include/linux/cpumask.h:299:19 302:1 8866
+void cpumask_setall (structBUG cpumask *dstp) include/linux/cpumask.h:308:20 311:1 8901
+void cpumask_clear (structBUG cpumask *dstp) include/linux/cpumask.h:317:20 320:1 8923
+int cpumask_and (structBUG cpumask *dstp,structBUG cpumask *src1p,structBUG cpumask *src2p) include/linux/cpumask.h:328:19 334:1 8945
+void cpumask_or (structBUG cpumask *dstp,structBUG cpumask *src1p,structBUG cpumask *src2p) include/linux/cpumask.h:342:20 347:1 8994
+void cpumask_xor (structBUG cpumask *dstp,structBUG cpumask *src1p,structBUG cpumask *src2p) include/linux/cpumask.h:355:20 361:1 9040
+int cpumask_andnot (structBUG cpumask *dstp,structBUG cpumask *src1p,structBUG cpumask *src2p) include/linux/cpumask.h:369:19 375:1 9086
+void cpumask_complement (structBUG cpumask *dstp,structBUG cpumask *srcp) include/linux/cpumask.h:382:20 387:1 9135
+bool cpumask_equal (structBUG cpumask *src1p,structBUG cpumask *src2p) include/linux/cpumask.h:394:20 399:1 9169
+bool cpumask_intersects (structBUG cpumask *src1p,structBUG cpumask *src2p) include/linux/cpumask.h:406:20 411:1 9208
+int cpumask_subset (structBUG cpumask *src1p,structBUG cpumask *src2p) include/linux/cpumask.h:418:19 423:1 9247
+bool cpumask_empty (structBUG cpumask *srcp) include/linux/cpumask.h:429:20 432:1 9284
+bool cpumask_full (structBUG cpumask *srcp) include/linux/cpumask.h:438:20 441:1 9311
+int cpumask_weight (structBUG cpumask *srcp) include/linux/cpumask.h:447:28 450:1 9338
+void cpumask_shift_right (structBUG cpumask *dstp,structBUG cpumask *srcp,int n) include/linux/cpumask.h:458:20 463:1 9364
+void cpumask_shift_left (structBUG cpumask *dstp,structBUG cpumask *srcp,int n) include/linux/cpumask.h:471:20 476:1 9403
+void cpumask_copy (structBUG cpumask *dstp,structBUG cpumask *srcp) include/linux/cpumask.h:483:20 487:1 9442
+int cpumask_scnprintf (char *buf,int len,structBUG cpumask *srcp) include/linux/cpumask.h:530:19 534:1 9476
+int cpumask_parse_user (char *buf,int len,structBUG cpumask *dstp) include/linux/cpumask.h:544:19 548:1 9513
+int cpumask_parselist_user (char *buf,int len,structBUG cpumask *dstp) include/linux/cpumask.h:558:19 563:1 9550
+int cpulist_scnprintf (char *buf,int len,structBUG cpumask *srcp) include/linux/cpumask.h:574:19 579:1 9587
+int cpulist_parse (char *buf,structBUG cpumask *dstp) include/linux/cpumask.h:589:19 592:1 9624
+size_t cpumask_size () include/linux/cpumask.h:599:22 604:1 9655
+bool alloc_cpumask_var (cpumask_var_t *mask,gfp_t flags) include/linux/cpumask.h:650:20 653:1 9664
+bool alloc_cpumask_var_node (cpumask_var_t *mask,gfp_t flags,int node) include/linux/cpumask.h:655:20 659:1 9680
+bool zalloc_cpumask_var (cpumask_var_t *mask,gfp_t flags) include/linux/cpumask.h:661:20 665:1 9699
+bool zalloc_cpumask_var_node (cpumask_var_t *mask,gfp_t flags,int node) include/linux/cpumask.h:667:20 672:1 9723
+void alloc_bootmem_cpumask_var (cpumask_var_t *mask) include/linux/cpumask.h:674:20 676:1 9750
+void free_cpumask_var (structBUG cpumask *mask) include/linux/cpumask.h:678:20 680:1 9760
+void free_bootmem_cpumask_var (structBUG cpumask *mask) include/linux/cpumask.h:682:20 684:1 9770
+int __check_is_bitmap (long unsigned int *bitmap) include/linux/cpumask.h:722:19 725:1 9780
+cpumask * get_cpu_mask (unsigned int cpu) include/linux/cpumask.h:737:37 742:1 9793
+void __cpu_set (int cpu,cpumask_t *dstp) include/linux/cpumask.h:834:20 837:1 9828
+void __cpu_clear (int cpu,cpumask_t *dstp) include/linux/cpumask.h:840:20 843:1 9855
+void __cpus_setall (cpumask_t *dstp,int nbits) include/linux/cpumask.h:846:20 849:1 9881
+void __cpus_clear (cpumask_t *dstp,int nbits) include/linux/cpumask.h:852:20 855:1 9907
+int __cpu_test_and_set (int cpu,cpumask_t *addr) include/linux/cpumask.h:861:19 864:1 9933
+int __cpus_and (cpumask_t *dstp,cpumask_t *src1p,cpumask_t *src2p,int nbits) include/linux/cpumask.h:867:19 871:1 9962
+void __cpus_or (cpumask_t *dstp,cpumask_t *src1p,cpumask_t *src2p,int nbits) include/linux/cpumask.h:874:20 878:1 10015
+void __cpus_xor (cpumask_t *dstp,cpumask_t *src1p,cpumask_t *src2p,int nbits) include/linux/cpumask.h:881:20 885:1 10065
+int __cpus_andnot (cpumask_t *dstp,cpumask_t *src1p,cpumask_t *src2p,int nbits) include/linux/cpumask.h:889:19 893:1 10115
+int __cpus_equal (cpumask_t *src1p,cpumask_t *src2p,int nbits) include/linux/cpumask.h:896:19 900:1 10168
+int __cpus_intersects (cpumask_t *src1p,cpumask_t *src2p,int nbits) include/linux/cpumask.h:903:19 907:1 10209
+int __cpus_subset (cpumask_t *src1p,cpumask_t *src2p,int nbits) include/linux/cpumask.h:910:19 914:1 10250
+int __cpus_empty (cpumask_t *srcp,int nbits) include/linux/cpumask.h:917:19 920:1 10291
+int __cpus_weight (cpumask_t *srcp,int nbits) include/linux/cpumask.h:923:19 926:1 10320
+void __cpus_shift_left (cpumask_t *dstp,cpumask_t *srcp,int n,int nbits) include/linux/cpumask.h:930:20 934:1 10349
+int native_read_tscp (unsigned int *aux) arch/x86/include/asm/msr.h:42:34 48:1 10392
+int native_read_msr (unsigned int msr) arch/x86/include/asm/msr.h:68:34 74:1 10444
+int native_read_msr_safe (unsigned int msr,int *err) arch/x86/include/asm/msr.h:76:34 90:1 10478
+void native_write_msr (unsigned int msr,unsigned int low,unsigned int high) arch/x86/include/asm/msr.h:92:20 96:1 10526
+int native_write_msr_safe (unsigned int msr,unsigned int low,unsigned int high) arch/x86/include/asm/msr.h:99:27 114:1 10562
+int __native_read_tsc () arch/x86/include/asm/msr.h:121:43 128:1 10617
+int native_read_pmc (int counter) arch/x86/include/asm/msr.h:130:34 136:1 10643
+void wrmsr (unsigned int msr,unsigned int low,unsigned int high) arch/x86/include/asm/msr.h:155:20 158:1 10677
+int wrmsr_safe (unsigned int msr,unsigned int low,unsigned int high) arch/x86/include/asm/msr.h:167:19 170:1 10701
+int rdmsrl_safe (unsigned int msr,long long unsigned int *p) arch/x86/include/asm/msr.h:182:19 188:1 10728
+int rdmsrl_amd_safe (unsigned int msr,long long unsigned int *p) arch/x86/include/asm/msr.h:190:19 203:1 10763
+int wrmsrl_amd_safe (unsigned int msr,long long unsigned int val) arch/x86/include/asm/msr.h:205:19 215:1 10831
+int rdmsr_safe_regs (u32 *regs) arch/x86/include/asm/msr.h:217:19 220:1 10890
+int wrmsr_safe_regs (u32 *regs) arch/x86/include/asm/msr.h:222:19 225:1 10908
+void native_clts () arch/x86/include/asm/special_insns.h:7:20 10:1 10926
+int native_read_cr0 () arch/x86/include/asm/special_insns.h:21:29 26:1 10937
+void native_write_cr0 (long unsigned int val) arch/x86/include/asm/special_insns.h:28:20 31:1 10968
+int native_read_cr2 () arch/x86/include/asm/special_insns.h:33:29 38:1 10992
+void native_write_cr2 (long unsigned int val) arch/x86/include/asm/special_insns.h:40:20 43:1 11023
+int native_read_cr3 () arch/x86/include/asm/special_insns.h:45:29 50:1 11047
+void native_write_cr3 (long unsigned int val) arch/x86/include/asm/special_insns.h:52:20 55:1 11078
+int native_read_cr4 () arch/x86/include/asm/special_insns.h:57:29 62:1 11102
+int native_read_cr4_safe () arch/x86/include/asm/special_insns.h:64:29 78:1 11133
+void native_write_cr4 (long unsigned int val) arch/x86/include/asm/special_insns.h:80:20 83:1 11168
+void native_wbinvd () arch/x86/include/asm/special_insns.h:99:20 102:1 11192
+int read_cr0 () arch/x86/include/asm/special_insns.h:110:29 113:1 11204
+void write_cr0 (long unsigned int x) arch/x86/include/asm/special_insns.h:115:20 118:1 11216
+int read_cr2 () arch/x86/include/asm/special_insns.h:120:29 123:1 11230
+void write_cr2 (long unsigned int x) arch/x86/include/asm/special_insns.h:125:20 128:1 11242
+int read_cr3 () arch/x86/include/asm/special_insns.h:130:29 133:1 11256
+void write_cr3 (long unsigned int x) arch/x86/include/asm/special_insns.h:135:20 138:1 11268
+int read_cr4 () arch/x86/include/asm/special_insns.h:140:29 143:1 11282
+int read_cr4_safe () arch/x86/include/asm/special_insns.h:145:29 148:1 11294
+void write_cr4 (long unsigned int x) arch/x86/include/asm/special_insns.h:150:20 153:1 11306
+void wbinvd () arch/x86/include/asm/special_insns.h:155:20 158:1 11320
+void clts () arch/x86/include/asm/special_insns.h:180:20 183:1 11329
+void clflush (void *__p) arch/x86/include/asm/special_insns.h:189:20 192:1 11338
+u64 div_u64 (u64 dividend,u32 divisor) include/linux/math64.h:82:19 86:1 11360
+s64 div_s64 (s64 dividend,s32 divisor) include/linux/math64.h:93:19 97:1 11390
+u32 __iter_div_u64_rem (u64 dividend,u32 divisor,u64 *remainder) include/linux/math64.h:103:1 119:1 11420
+void * ERR_PTR (long int error) include/linux/err.h:22:35 25:1 11494
+int PTR_ERR (void *ptr) include/linux/err.h:27:33 30:1 11509
+int IS_ERR (void *ptr) include/linux/err.h:32:33 35:1 11524
+int IS_ERR_OR_NULL (void *ptr) include/linux/err.h:37:33 40:1 11546
+void * ERR_CAST (void *ptr) include/linux/err.h:49:35 53:1 11576
+int PTR_RET (void *ptr) include/linux/err.h:55:32 61:1 11592
+int native_save_fl () arch/x86/include/asm/irqflags.h:11:29 27:1 11624
+void native_restore_fl (long unsigned int flags) arch/x86/include/asm/irqflags.h:29:20 35:1 11651
+void native_irq_disable () arch/x86/include/asm/irqflags.h:37:20 40:1 11672
+void native_irq_enable () arch/x86/include/asm/irqflags.h:42:20 45:1 11684
+void native_safe_halt () arch/x86/include/asm/irqflags.h:47:20 50:1 11696
+void native_halt () arch/x86/include/asm/irqflags.h:52:20 55:1 11708
+int arch_local_save_flags () arch/x86/include/asm/irqflags.h:65:37 68:1 11720
+void arch_local_irq_restore (long unsigned int flags) arch/x86/include/asm/irqflags.h:70:28 73:1 11732
+void arch_local_irq_disable () arch/x86/include/asm/irqflags.h:75:28 78:1 11746
+void arch_local_irq_enable () arch/x86/include/asm/irqflags.h:80:28 83:1 11755
+void arch_safe_halt () arch/x86/include/asm/irqflags.h:89:20 92:1 11764
+void halt () arch/x86/include/asm/irqflags.h:98:20 101:1 11773
+int arch_local_irq_save () arch/x86/include/asm/irqflags.h:106:37 111:1 11782
+int arch_irqs_disabled_flags (long unsigned int flags) arch/x86/include/asm/irqflags.h:155:19 158:1 11801
+int arch_irqs_disabled () arch/x86/include/asm/irqflags.h:160:19 165:1 11818
+void * current_text_addr () arch/x86/include/asm/processor.h:47:21 54:1 11837
+int hlt_works (int cpu) arch/x86/include/asm/processor.h:155:19 162:1 11865
+void native_cpuid (unsigned int *eax,unsigned int *ebx,unsigned int *ecx,unsigned int *edx) arch/x86/include/asm/processor.h:182:20 193:1 11933
+void load_cr3 (pgd_t *pgdir) arch/x86/include/asm/processor.h:195:20 198:1 11997
+void native_set_iopl_mask (unsigned int mask) arch/x86/include/asm/processor.h:490:20 504:1 12015
+void native_load_sp0 (structBUG tss_struct *tss,structBUG thread_struct *thread) arch/x86/include/asm/processor.h:507:1 517:1 12048
+void native_swapgs () arch/x86/include/asm/processor.h:519:20 524:1 12135
+void load_sp0 (structBUG tss_struct *tss,structBUG thread_struct *thread) arch/x86/include/asm/processor.h:532:20 536:1 12141
+void set_in_cr4 (long unsigned int mask) arch/x86/include/asm/processor.h:550:20 560:1 12162
+void clear_in_cr4 (long unsigned int mask) arch/x86/include/asm/processor.h:562:20 572:1 12217
+void cpuid (unsigned int op,unsigned int *eax,unsigned int *ebx,unsigned int *ecx,unsigned int *edx) arch/x86/include/asm/processor.h:594:20 601:1 12274
+void cpuid_count (unsigned int op,int count,unsigned int *eax,unsigned int *ebx,unsigned int *ecx,unsigned int *edx) arch/x86/include/asm/processor.h:604:20 611:1 12322
+int cpuid_eax (unsigned int op) arch/x86/include/asm/processor.h:616:28 623:1 12375
+int cpuid_ebx (unsigned int op) arch/x86/include/asm/processor.h:625:28 632:1 12423
+int cpuid_ecx (unsigned int op) arch/x86/include/asm/processor.h:634:28 641:1 12471
+int cpuid_edx (unsigned int op) arch/x86/include/asm/processor.h:643:28 650:1 12519
+void rep_nop () arch/x86/include/asm/processor.h:653:20 656:1 12567
+void cpu_relax () arch/x86/include/asm/processor.h:658:20 661:1 12579
+void sync_core () arch/x86/include/asm/processor.h:664:20 680:1 12588
+void __monitor (void *eax,long unsigned int ecx,long unsigned int edx) arch/x86/include/asm/processor.h:682:20 688:1 12617
+void __mwait (long unsigned int eax,long unsigned int ecx) arch/x86/include/asm/processor.h:690:20 695:1 12653
+void __sti_mwait (long unsigned int eax,long unsigned int ecx) arch/x86/include/asm/processor.h:697:20 703:1 12680
+int get_debugctlmsr () arch/x86/include/asm/processor.h:727:29 738:1 12707
+void update_debugctlmsr (long unsigned int debugctlmsr) arch/x86/include/asm/processor.h:740:20 747:1 12731
+void prefetch (void *x) arch/x86/include/asm/processor.h:780:20 786:1 12753
+void prefetchw (void *x) arch/x86/include/asm/processor.h:793:20 799:1 12777
+void spin_lock_prefetch (void *x) arch/x86/include/asm/processor.h:801:20 804:1 12801
+void get_aperfmperf (structBUG aperfmperf *am) arch/x86/include/asm/processor.h:934:20 940:1 12816
+int calc_aperfmperf_ratio (structBUG aperfmperf *old,structBUG aperfmperf *new) arch/x86/include/asm/processor.h:945:15 957:1 12936
+int ftrace_call_adjust (long unsigned int addr) arch/x86/include/asm/ftrace.h:39:29 46:1 12992
+void set_64bit (u64 *ptr,u64 value) arch/x86/include/asm/cmpxchg_32.h:23:20 35:1 13005
+u64 __cmpxchg64 (u64 *ptr,u64 old,u64 new) arch/x86/include/asm/cmpxchg_32.h:50:19 61:1 13058
+u64 __cmpxchg64_local (u64 *ptr,u64 old,u64 new) arch/x86/include/asm/cmpxchg_32.h:63:19 74:1 13120
+int atomic_read (atomic_t *v) arch/x86/include/asm/atomic.h:23:19 26:1 13182
+void atomic_set (atomic_t *v,int i) arch/x86/include/asm/atomic.h:35:20 38:1 13204
+void atomic_add (int i,atomic_t *v) arch/x86/include/asm/atomic.h:47:20 52:1 13225
+void atomic_sub (int i,atomic_t *v) arch/x86/include/asm/atomic.h:61:20 66:1 13257
+int atomic_sub_and_test (int i,atomic_t *v) arch/x86/include/asm/atomic.h:77:19 85:1 13289
+void atomic_inc (atomic_t *v) arch/x86/include/asm/atomic.h:93:20 97:1 13338
+void atomic_dec (atomic_t *v) arch/x86/include/asm/atomic.h:105:20 109:1 13362
+int atomic_dec_and_test (atomic_t *v) arch/x86/include/asm/atomic.h:119:19 127:1 13386
+int atomic_inc_and_test (atomic_t *v) arch/x86/include/asm/atomic.h:137:19 145:1 13428
+int atomic_add_negative (int i,atomic_t *v) arch/x86/include/asm/atomic.h:156:19 164:1 13470
+int atomic_add_return (int i,atomic_t *v) arch/x86/include/asm/atomic.h:173:19 192:1 13519
+int atomic_sub_return (int i,atomic_t *v) arch/x86/include/asm/atomic.h:201:19 204:1 13677
+int atomic_cmpxchg (atomic_t *v,int old,int new) arch/x86/include/asm/atomic.h:209:19 212:1 13701
+int atomic_xchg (atomic_t *v,int new) arch/x86/include/asm/atomic.h:214:19 217:1 13919
+int __atomic_add_unless (atomic_t *v,int a,int u) arch/x86/include/asm/atomic.h:228:19 241:1 14074
+int atomic_dec_if_positive (atomic_t *v) arch/x86/include/asm/atomic.h:251:19 265:1 14172
+int atomic_inc_short (short int *v) arch/x86/include/asm/atomic.h:274:25 278:1 14271
+int atomic64_cmpxchg (atomic64_t *v,long long int o,long long int n) arch/x86/include/asm/atomic64_32.h:74:25 77:1 14299
+int atomic64_xchg (atomic64_t *v,long long int n) arch/x86/include/asm/atomic64_32.h:87:25 96:1 14336
+void atomic64_set (atomic64_t *v,long long int i) arch/x86/include/asm/atomic64_32.h:105:20 112:1 14399
+int atomic64_read (atomic64_t *v) arch/x86/include/asm/atomic64_32.h:120:25 125:2 14450
+int atomic64_add_return (long long int i,atomic64_t *v) arch/x86/include/asm/atomic64_32.h:134:25 140:1 14492
+int atomic64_sub_return (long long int i,atomic64_t *v) arch/x86/include/asm/atomic64_32.h:145:25 151:1 14537
+int atomic64_inc_return (atomic64_t *v) arch/x86/include/asm/atomic64_32.h:153:25 159:1 14582
+int atomic64_dec_return (atomic64_t *v) arch/x86/include/asm/atomic64_32.h:161:25 167:1 14625
+int atomic64_add (long long int i,atomic64_t *v) arch/x86/include/asm/atomic64_32.h:176:25 182:1 14668
+int atomic64_sub (long long int i,atomic64_t *v) arch/x86/include/asm/atomic64_32.h:191:25 197:1 14713
+int atomic64_sub_and_test (long long int i,atomic64_t *v) arch/x86/include/asm/atomic64_32.h:208:19 211:1 14758
+void atomic64_inc (atomic64_t *v) arch/x86/include/asm/atomic64_32.h:219:20 223:1 14783
+void atomic64_dec (atomic64_t *v) arch/x86/include/asm/atomic64_32.h:231:20 235:1 14813
+int atomic64_dec_and_test (atomic64_t *v) arch/x86/include/asm/atomic64_32.h:245:19 248:1 14843
+int atomic64_inc_and_test (atomic64_t *v) arch/x86/include/asm/atomic64_32.h:258:19 261:1 14863
+int atomic64_add_negative (long long int i,atomic64_t *v) arch/x86/include/asm/atomic64_32.h:272:19 275:1 14883
+int atomic64_add_unless (atomic64_t *v,long long int a,long long int u) arch/x86/include/asm/atomic64_32.h:286:19 294:1 14908
+int atomic64_inc_not_zero (atomic64_t *v) arch/x86/include/asm/atomic64_32.h:297:19 303:1 14971
+int atomic64_dec_if_positive (atomic64_t *v) arch/x86/include/asm/atomic64_32.h:305:25 311:1 15015
+int atomic_add_unless (atomic_t *v,int a,int u) include/linux/atomic.h:15:19 18:1 15058
+int atomic_inc_not_zero_hint (atomic_t *v,int hint) include/linux/atomic.h:44:19 60:1 15089
+int atomic_inc_unless_negative (atomic_t *p) include/linux/atomic.h:64:19 73:1 15175
+int atomic_dec_unless_positive (atomic_t *p) include/linux/atomic.h:77:19 86:1 15256
+void atomic_or (int i,atomic_t *v) include/linux/atomic.h:90:20 99:1 15337
+int atomic_long_read (atomic_long_t *l) include/asm-generic/atomic-long.h:144:20 149:1 15398
+void atomic_long_set (atomic_long_t *l,long int i) include/asm-generic/atomic-long.h:151:20 156:1 15424
+void atomic_long_inc (atomic_long_t *l) include/asm-generic/atomic-long.h:158:20 163:1 15451
+void atomic_long_dec (atomic_long_t *l) include/asm-generic/atomic-long.h:165:20 170:1 15472
+void atomic_long_add (long int i,atomic_long_t *l) include/asm-generic/atomic-long.h:172:20 177:1 15493
+void atomic_long_sub (long int i,atomic_long_t *l) include/asm-generic/atomic-long.h:179:20 184:1 15520
+int atomic_long_sub_and_test (long int i,atomic_long_t *l) include/asm-generic/atomic-long.h:186:19 191:1 15547
+int atomic_long_dec_and_test (atomic_long_t *l) include/asm-generic/atomic-long.h:193:19 198:1 15577
+int atomic_long_inc_and_test (atomic_long_t *l) include/asm-generic/atomic-long.h:200:19 205:1 15601
+int atomic_long_add_negative (long int i,atomic_long_t *l) include/asm-generic/atomic-long.h:207:19 212:1 15625
+int atomic_long_add_return (long int i,atomic_long_t *l) include/asm-generic/atomic-long.h:214:20 219:1 15655
+int atomic_long_sub_return (long int i,atomic_long_t *l) include/asm-generic/atomic-long.h:221:20 226:1 15686
+int atomic_long_inc_return (atomic_long_t *l) include/asm-generic/atomic-long.h:228:20 233:1 15717
+int atomic_long_dec_return (atomic_long_t *l) include/asm-generic/atomic-long.h:235:20 240:1 15743
+int atomic_long_add_unless (atomic_long_t *l,long int a,long int u) include/asm-generic/atomic-long.h:242:20 247:1 15769
+thread_info * current_thread_info () arch/x86/include/asm/thread_info.h:175:35 179:1 15806
+void set_restore_sigmask () arch/x86/include/asm/thread_info.h:247:20 252:1 15820
+void clear_restore_sigmask () arch/x86/include/asm/thread_info.h:253:20 256:1 15887
+bool test_restore_sigmask () arch/x86/include/asm/thread_info.h:257:20 260:1 15913
+bool test_and_clear_restore_sigmask () arch/x86/include/asm/thread_info.h:261:20 268:1 15933
+bool is_ia32_task () arch/x86/include/asm/thread_info.h:270:20 280:1 15979
+void set_ti_thread_flag (structBUG thread_info *ti,int flag) include/linux/thread_info.h:69:20 72:1 15993
+void clear_ti_thread_flag (structBUG thread_info *ti,int flag) include/linux/thread_info.h:74:20 77:1 16020
+int test_and_set_ti_thread_flag (structBUG thread_info *ti,int flag) include/linux/thread_info.h:79:19 82:1 16046
+int test_and_clear_ti_thread_flag (structBUG thread_info *ti,int flag) include/linux/thread_info.h:84:19 87:1 16075
+int test_ti_thread_flag (structBUG thread_info *ti,int flag) include/linux/thread_info.h:89:19 92:1 16104
+void INIT_LIST_HEAD (structBUG list_head *list) include/linux/list.h:24:20 28:1 16157
+void __list_add (structBUG list_head *new,structBUG list_head *prev,structBUG list_head *next) include/linux/list.h:37:20 45:1 16185
+void list_add (structBUG list_head *new,structBUG list_head *head) include/linux/list.h:60:20 63:1 16239
+void list_add_tail (structBUG list_head *new,structBUG list_head *head) include/linux/list.h:74:20 77:1 16266
+void __list_del (structBUG list_head *prev,structBUG list_head *next) include/linux/list.h:86:20 90:1 16293
+void __list_del_entry (structBUG list_head *entry) include/linux/list.h:99:20 102:1 16325
+void list_del (structBUG list_head *entry) include/linux/list.h:104:20 109:1 16350
+void list_replace (structBUG list_head *old,structBUG list_head *new) include/linux/list.h:122:20 129:1 16392
+void list_replace_init (structBUG list_head *old,structBUG list_head *new) include/linux/list.h:131:20 136:1 16458
+void list_del_init (structBUG list_head *entry) include/linux/list.h:142:20 146:1 16486
+void list_move (structBUG list_head *list,structBUG list_head *head) include/linux/list.h:153:20 157:1 16508
+void list_move_tail (structBUG list_head *list,structBUG list_head *head) include/linux/list.h:164:20 169:1 16536
+int list_is_last (structBUG list_head *list,structBUG list_head *head) include/linux/list.h:176:19 180:1 16564
+int list_empty (structBUG list_head *head) include/linux/list.h:186:19 189:1 16590
+int list_empty_careful (structBUG list_head *head) include/linux/list.h:204:19 208:1 16612
+void list_rotate_left (structBUG list_head *head) include/linux/list.h:214:20 222:1 16647
+int list_is_singular (structBUG list_head *head) include/linux/list.h:228:19 231:1 16691
+void __list_cut_position (structBUG list_head *list,structBUG list_head *head,structBUG list_head *entry) include/linux/list.h:233:20 243:1 16725
+void list_cut_position (structBUG list_head *list,structBUG list_head *head,structBUG list_head *entry) include/linux/list.h:259:20 271:1 16810
+void __list_splice (structBUG list_head *list,structBUG list_head *prev,structBUG list_head *next) include/linux/list.h:273:20 285:1 16892
+void list_splice (structBUG list_head *list,structBUG list_head *head) include/linux/list.h:292:20 297:1 16956
+void list_splice_tail (structBUG list_head *list,structBUG list_head *head) include/linux/list.h:304:20 309:1 16993
+void list_splice_init (structBUG list_head *list,structBUG list_head *head) include/linux/list.h:318:20 325:1 17032
+void list_splice_tail_init (structBUG list_head *list,structBUG list_head *head) include/linux/list.h:335:20 342:1 17078
+void INIT_HLIST_NODE (structBUG hlist_node *h) include/linux/list.h:570:20 574:1 17124
+int hlist_unhashed (structBUG hlist_node *h) include/linux/list.h:576:19 579:1 17150
+int hlist_empty (structBUG hlist_head *h) include/linux/list.h:581:19 584:1 17170
+void __hlist_del (structBUG hlist_node *n) include/linux/list.h:586:20 593:1 17190
+void hlist_del (structBUG hlist_node *n) include/linux/list.h:595:20 600:1 17232
+void hlist_del_init (structBUG hlist_node *n) include/linux/list.h:602:20 608:1 17264
+void hlist_add_head (structBUG hlist_node *n,structBUG hlist_head *h) include/linux/list.h:610:20 618:1 17297
+void hlist_add_before (structBUG hlist_node *n,structBUG hlist_node *next) include/linux/list.h:621:20 628:1 17368
+void hlist_add_after (structBUG hlist_node *n,structBUG hlist_node *next) include/linux/list.h:630:20 639:1 17428
+void hlist_add_fake (structBUG hlist_node *n) include/linux/list.h:642:20 645:1 17506
+void hlist_move_list (structBUG hlist_head *old,structBUG hlist_head *new) include/linux/list.h:651:20 658:1 17529
+void rdtsc_barrier () arch/x86/include/asm/barrier.h:110:29 114:1 17592
+void lockdep_off () include/linux/lockdep.h:368:20 370:1 17612
+void lockdep_on () include/linux/lockdep.h:372:20 374:1 17618
+void print_irqtrace_events (structBUG task_struct *curr) include/linux/lockdep.h:463:20 465:1 17624
+void __ticket_spin_lock (arch_spinlock_t *lock) arch/x86/include/asm/spinlock.h:51:29 64:1 17634
+int __ticket_spin_trylock (arch_spinlock_t *lock) arch/x86/include/asm/spinlock.h:66:28 78:1 17853
+void __ticket_spin_unlock (arch_spinlock_t *lock) arch/x86/include/asm/spinlock.h:80:29 83:1 18149
+int __ticket_spin_is_locked (arch_spinlock_t *lock) arch/x86/include/asm/spinlock.h:85:19 90:1 18314
+int __ticket_spin_is_contended (arch_spinlock_t *lock) arch/x86/include/asm/spinlock.h:92:19 97:1 18344
+int arch_spin_is_locked (arch_spinlock_t *lock) arch/x86/include/asm/spinlock.h:101:19 104:1 18376
+int arch_spin_is_contended (arch_spinlock_t *lock) arch/x86/include/asm/spinlock.h:106:19 109:1 18394
+void arch_spin_lock (arch_spinlock_t *lock) arch/x86/include/asm/spinlock.h:112:29 115:1 18412
+int arch_spin_trylock (arch_spinlock_t *lock) arch/x86/include/asm/spinlock.h:117:28 120:1 18427
+void arch_spin_unlock (arch_spinlock_t *lock) arch/x86/include/asm/spinlock.h:122:29 125:1 18445
+void arch_spin_lock_flags (arch_spinlock_t *lock,long unsigned int flags) arch/x86/include/asm/spinlock.h:127:29 131:1 18460
+void arch_spin_unlock_wait (arch_spinlock_t *lock) arch/x86/include/asm/spinlock.h:135:20 139:1 18478
+int arch_read_can_lock (arch_rwlock_t *lock) arch/x86/include/asm/spinlock.h:159:19 162:1 18513
+int arch_write_can_lock (arch_rwlock_t *lock) arch/x86/include/asm/spinlock.h:168:19 171:1 18534
+void arch_read_lock (arch_rwlock_t *rw) arch/x86/include/asm/spinlock.h:173:20 180:1 18555
+void arch_write_lock (arch_rwlock_t *rw) arch/x86/include/asm/spinlock.h:182:20 190:1 18576
+int arch_read_trylock (arch_rwlock_t *lock) arch/x86/include/asm/spinlock.h:192:19 200:1 18606
+int arch_write_trylock (arch_rwlock_t *lock) arch/x86/include/asm/spinlock.h:202:19 210:1 18646
+void arch_read_unlock (arch_rwlock_t *rw) arch/x86/include/asm/spinlock.h:212:20 216:1 18687
+void arch_write_unlock (arch_rwlock_t *rw) arch/x86/include/asm/spinlock.h:218:20 222:1 18712
+void smp_mb__after_lock () arch/x86/include/asm/spinlock.h:238:20 238:1 18741
+void do_raw_spin_lock (raw_spinlock_t *lock) include/linux/spinlock.h:137:20 141:1 18747
+void do_raw_spin_lock_flags (raw_spinlock_t *lock,long unsigned int *flags) include/linux/spinlock.h:144:1 148:1 18770
+int do_raw_spin_trylock (raw_spinlock_t *lock) include/linux/spinlock.h:150:19 153:1 18800
+void do_raw_spin_unlock (raw_spinlock_t *lock) include/linux/spinlock.h:155:20 159:1 18823
+int __raw_spin_trylock (raw_spinlock_t *lock) include/linux/spinlock_api_smp.h:86:19 95:1 18846
+int __raw_spin_lock_irqsave (raw_spinlock_t *lock) include/linux/spinlock_api_smp.h:104:29 122:1 18874
+void __raw_spin_lock_irq (raw_spinlock_t *lock) include/linux/spinlock_api_smp.h:124:20 130:1 18926
+void __raw_spin_lock_bh (raw_spinlock_t *lock) include/linux/spinlock_api_smp.h:132:20 138:1 18946
+void __raw_spin_lock (raw_spinlock_t *lock) include/linux/spinlock_api_smp.h:140:20 145:1 18966
+void __raw_spin_unlock (raw_spinlock_t *lock) include/linux/spinlock_api_smp.h:149:20 154:1 18981
+void __raw_spin_unlock_irqrestore (raw_spinlock_t *lock,long unsigned int flags) include/linux/spinlock_api_smp.h:156:20 163:1 18996
+void __raw_spin_unlock_irq (raw_spinlock_t *lock) include/linux/spinlock_api_smp.h:165:20 171:1 19095
+void __raw_spin_unlock_bh (raw_spinlock_t *lock) include/linux/spinlock_api_smp.h:173:20 179:1 19115
+int __raw_spin_trylock_bh (raw_spinlock_t *lock) include/linux/spinlock_api_smp.h:181:19 192:1 19141
+int __raw_read_trylock (rwlock_t *lock) include/linux/rwlock_api_smp.h:117:19 126:1 19183
+int __raw_write_trylock (rwlock_t *lock) include/linux/rwlock_api_smp.h:128:19 137:1 19216
+void __raw_read_lock (rwlock_t *lock) include/linux/rwlock_api_smp.h:146:20 151:1 19249
+int __raw_read_lock_irqsave (rwlock_t *lock) include/linux/rwlock_api_smp.h:153:29 163:1 19272
+void __raw_read_lock_irq (rwlock_t *lock) include/linux/rwlock_api_smp.h:165:20 171:1 19328
+void __raw_read_lock_bh (rwlock_t *lock) include/linux/rwlock_api_smp.h:173:20 179:1 19355
+int __raw_write_lock_irqsave (rwlock_t *lock) include/linux/rwlock_api_smp.h:181:29 191:1 19382
+void __raw_write_lock_irq (rwlock_t *lock) include/linux/rwlock_api_smp.h:193:20 199:1 19438
+void __raw_write_lock_bh (rwlock_t *lock) include/linux/rwlock_api_smp.h:201:20 207:1 19465
+void __raw_write_lock (rwlock_t *lock) include/linux/rwlock_api_smp.h:209:20 214:1 19492
+void __raw_write_unlock (rwlock_t *lock) include/linux/rwlock_api_smp.h:218:20 223:1 19515
+void __raw_read_unlock (rwlock_t *lock) include/linux/rwlock_api_smp.h:225:20 230:1 19538
+void __raw_read_unlock_irqrestore (rwlock_t *lock,long unsigned int flags) include/linux/rwlock_api_smp.h:233:1 239:1 19561
+void __raw_read_unlock_irq (rwlock_t *lock) include/linux/rwlock_api_smp.h:241:20 247:1 19667
+void __raw_read_unlock_bh (rwlock_t *lock) include/linux/rwlock_api_smp.h:249:20 255:1 19694
+void __raw_write_unlock_irqrestore (rwlock_t *lock,long unsigned int flags) include/linux/rwlock_api_smp.h:257:20 264:1 19727
+void __raw_write_unlock_irq (rwlock_t *lock) include/linux/rwlock_api_smp.h:266:20 272:1 19833
+void __raw_write_unlock_bh (rwlock_t *lock) include/linux/rwlock_api_smp.h:274:20 280:1 19860
+raw_spinlock_t * spinlock_check (spinlock_t *lock) include/linux/spinlock.h:272:31 275:1 19893
+void spin_lock (spinlock_t *lock) include/linux/spinlock.h:283:20 286:1 19916
+void spin_lock_bh (spinlock_t *lock) include/linux/spinlock.h:288:20 291:1 19939
+int spin_trylock (spinlock_t *lock) include/linux/spinlock.h:293:19 296:1 19962
+void spin_lock_irq (spinlock_t *lock) include/linux/spinlock.h:308:20 311:1 19988
+void spin_unlock (spinlock_t *lock) include/linux/spinlock.h:323:20 326:1 20011
+void spin_unlock_bh (spinlock_t *lock) include/linux/spinlock.h:328:20 331:1 20034
+void spin_unlock_irq (spinlock_t *lock) include/linux/spinlock.h:333:20 336:1 20057
+void spin_unlock_irqrestore (spinlock_t *lock,long unsigned int flags) include/linux/spinlock.h:338:20 341:1 20080
+int spin_trylock_bh (spinlock_t *lock) include/linux/spinlock.h:343:19 346:1 20126
+int spin_trylock_irq (spinlock_t *lock) include/linux/spinlock.h:348:19 351:1 20152
+void spin_unlock_wait (spinlock_t *lock) include/linux/spinlock.h:358:20 361:1 20205
+int spin_is_locked (spinlock_t *lock) include/linux/spinlock.h:363:19 366:1 20230
+int spin_is_contended (spinlock_t *lock) include/linux/spinlock.h:368:19 371:1 20258
+int spin_can_lock (spinlock_t *lock) include/linux/spinlock.h:373:19 376:1 20286
+void init_waitqueue_entry (wait_queue_t *q,structBUG task_struct *p) include/linux/wait.h:97:20 102:1 20316
+void init_waitqueue_func_entry (wait_queue_t *q,wait_queue_func_t func) include/linux/wait.h:104:20 110:1 20358
+int waitqueue_active (wait_queue_head_t *q) include/linux/wait.h:112:19 115:1 20396
+void __add_wait_queue (wait_queue_head_t *head,wait_queue_t *new) include/linux/wait.h:121:20 124:1 20422
+void __add_wait_queue_exclusive (wait_queue_head_t *q,wait_queue_t *wait) include/linux/wait.h:129:20 134:1 20453
+void __add_wait_queue_tail (wait_queue_head_t *head,wait_queue_t *new) include/linux/wait.h:136:20 140:1 20490
+void __add_wait_queue_tail_exclusive (wait_queue_head_t *q,wait_queue_t *wait) include/linux/wait.h:142:20 147:1 20521
+void __remove_wait_queue (wait_queue_head_t *head,wait_queue_t *old) include/linux/wait.h:149:20 153:1 20558
+int wait_on_bit (void *word,int bit,void void *int *action,unsigned int mode) include/linux/wait.h:634:19 640:1 20582
+int wait_on_bit_lock (void *word,int bit,void void *int *action,unsigned int mode) include/linux/wait.h:658:19 664:1 20659
+void write_seqlock (seqlock_t *sl) include/linux/seqlock.h:58:20 63:1 20715
+void write_sequnlock (seqlock_t *sl) include/linux/seqlock.h:65:20 70:1 20751
+int write_tryseqlock (seqlock_t *sl) include/linux/seqlock.h:72:19 81:1 20787
+int read_seqbegin (seqlock_t *sl) include/linux/seqlock.h:84:33 97:1 20828
+int read_seqretry (seqlock_t *sl,unsigned int start) include/linux/seqlock.h:104:28 109:1 20892
+int __read_seqcount_begin (seqcount_t *s) include/linux/seqlock.h:139:24 150:1 20931
+int read_seqcount_begin (seqcount_t *s) include/linux/seqlock.h:161:24 166:1 20988
+int raw_seqcount_begin (seqcount_t *s) include/linux/seqlock.h:182:24 187:1 21014
+int __read_seqcount_retry (seqcount_t *s,unsigned int start) include/linux/seqlock.h:203:19 206:1 21042
+int read_seqcount_retry (seqcount_t *s,unsigned int start) include/linux/seqlock.h:218:19 223:1 21073
+void write_seqcount_begin (seqcount_t *s) include/linux/seqlock.h:230:20 234:1 21104
+void write_seqcount_end (seqcount_t *s) include/linux/seqlock.h:236:20 240:1 21129
+void write_seqcount_barrier (seqcount_t *s) include/linux/seqlock.h:249:20 253:1 21154
+void __node_set (int node,nodemask_t *dstp) include/linux/nodemask.h:102:20 105:1 21186
+void __node_clear (int node,nodemask_t *dstp) include/linux/nodemask.h:108:20 111:1 21213
+void __nodes_setall (nodemask_t *dstp,int nbits) include/linux/nodemask.h:114:20 117:1 21239
+void __nodes_clear (nodemask_t *dstp,int nbits) include/linux/nodemask.h:120:20 123:1 21265
+int __node_test_and_set (int node,nodemask_t *addr) include/linux/nodemask.h:130:19 133:1 21291
+void __nodes_and (nodemask_t *dstp,nodemask_t *src1p,nodemask_t *src2p,int nbits) include/linux/nodemask.h:137:20 141:1 21320
+void __nodes_or (nodemask_t *dstp,nodemask_t *src1p,nodemask_t *src2p,int nbits) include/linux/nodemask.h:145:20 149:1 21370
+void __nodes_xor (nodemask_t *dstp,nodemask_t *src1p,nodemask_t *src2p,int nbits) include/linux/nodemask.h:153:20 157:1 21420
+void __nodes_andnot (nodemask_t *dstp,nodemask_t *src1p,nodemask_t *src2p,int nbits) include/linux/nodemask.h:161:20 165:1 21470
+void __nodes_complement (nodemask_t *dstp,nodemask_t *srcp,int nbits) include/linux/nodemask.h:169:20 173:1 21520
+int __nodes_equal (nodemask_t *src1p,nodemask_t *src2p,int nbits) include/linux/nodemask.h:177:19 181:1 21558
+int __nodes_intersects (nodemask_t *src1p,nodemask_t *src2p,int nbits) include/linux/nodemask.h:185:19 189:1 21599
+int __nodes_subset (nodemask_t *src1p,nodemask_t *src2p,int nbits) include/linux/nodemask.h:193:19 197:1 21640
+int __nodes_empty (nodemask_t *srcp,int nbits) include/linux/nodemask.h:200:19 203:1 21681
+int __nodes_full (nodemask_t *srcp,int nbits) include/linux/nodemask.h:206:19 209:1 21710
+int __nodes_weight (nodemask_t *srcp,int nbits) include/linux/nodemask.h:212:19 215:1 21739
+void __nodes_shift_right (nodemask_t *dstp,nodemask_t *srcp,int n,int nbits) include/linux/nodemask.h:219:20 223:1 21768
+void __nodes_shift_left (nodemask_t *dstp,nodemask_t *srcp,int n,int nbits) include/linux/nodemask.h:227:20 231:1 21811
+int __first_node (nodemask_t *srcp) include/linux/nodemask.h:237:19 240:1 21854
+int __next_node (int n,nodemask_t *srcp) include/linux/nodemask.h:243:19 246:1 21885
+void init_nodemask_of_node (nodemask_t *mask,int node) include/linux/nodemask.h:248:20 252:1 21919
+int __first_unset_node (nodemask_t *maskp) include/linux/nodemask.h:266:19 270:1 21948
+int __nodemask_scnprintf (char *buf,int len,nodemask_t *srcp,int nbits) include/linux/nodemask.h:300:19 304:1 21979
+int __nodemask_parse_user (char *buf,int len,nodemask_t *dstp,int nbits) include/linux/nodemask.h:308:19 312:1 22020
+int __nodelist_scnprintf (char *buf,int len,nodemask_t *srcp,int nbits) include/linux/nodemask.h:316:19 320:1 22061
+int __nodelist_parse (char *buf,nodemask_t *dstp,int nbits) include/linux/nodemask.h:323:19 326:1 22102
+int __node_remap (int oldbit,nodemask_t *oldp,nodemask_t *newp,int nbits) include/linux/nodemask.h:330:19 334:1 22137
+void __nodes_remap (nodemask_t *dstp,nodemask_t *srcp,nodemask_t *oldp,nodemask_t *newp,int nbits) include/linux/nodemask.h:338:20 342:1 22183
+void __nodes_onto (nodemask_t *dstp,nodemask_t *origp,nodemask_t *relmapp,int nbits) include/linux/nodemask.h:346:20 350:1 22245
+void __nodes_fold (nodemask_t *dstp,nodemask_t *origp,int sz,int nbits) include/linux/nodemask.h:354:20 358:1 22295
+int node_state (int node,structBUG node_states state) include/linux/nodemask.h:438:19 441:1 22338
+void node_set_state (int node,structBUG node_states state) include/linux/nodemask.h:443:20 445:1 22356
+void node_clear_state (int node,structBUG node_states state) include/linux/nodemask.h:447:20 449:1 22368
+int num_node_state (structBUG node_states state) include/linux/nodemask.h:451:19 454:1 22380
+int node_random (nodemask_t *mask) include/linux/nodemask.h:472:19 475:1 22392
+int get_pageblock_migratetype (structBUG page *page) include/linux/mmzone.h:78:19 81:1 22405
+int is_file_lru (structBUG lru_list lru) include/linux/mmzone.h:173:19 176:1 22426
+int is_active_lru (structBUG lru_list lru) include/linux/mmzone.h:178:19 181:1 22444
+int is_unevictable_lru (structBUG lru_list lru) include/linux/mmzone.h:183:19 186:1 22466
+void zone_set_flag (structBUG zone *zone,zone_flags_t flag) include/linux/mmzone.h:488:20 491:1 22482
+int zone_test_and_set_flag (structBUG zone *zone,zone_flags_t flag) include/linux/mmzone.h:493:19 496:1 22509
+void zone_clear_flag (structBUG zone *zone,zone_flags_t flag) include/linux/mmzone.h:498:20 501:1 22539
+int zone_is_reclaim_congested (structBUG zone *zone) include/linux/mmzone.h:503:19 506:1 22566
+int zone_is_reclaim_locked (structBUG zone *zone) include/linux/mmzone.h:508:19 511:1 22591
+int zone_is_oom_locked (structBUG zone *zone) include/linux/mmzone.h:513:19 516:1 22616
+void mutex_destroy (structBUG mutex *lock) include/linux/mutex.h:95:20 95:41 22641
+int mutex_is_locked (structBUG mutex *lock) include/linux/mutex.h:124:19 127:1 22651
+void __down_read (structBUG rw_semaphore *sem) arch/x86/include/asm/rwsem.h:63:20 75:1 22677
+int __down_read_trylock (structBUG rw_semaphore *sem) arch/x86/include/asm/rwsem.h:80:19 97:1 22708
+void __down_write_nested (structBUG rw_semaphore *sem,int subclass) arch/x86/include/asm/rwsem.h:102:20 117:1 22764
+void __down_write (structBUG rw_semaphore *sem) arch/x86/include/asm/rwsem.h:119:20 122:1 22812
+int __down_write_trylock (structBUG rw_semaphore *sem) arch/x86/include/asm/rwsem.h:127:19 134:1 22828
+void __up_read (structBUG rw_semaphore *sem) arch/x86/include/asm/rwsem.h:139:20 152:1 22856
+void __up_write (structBUG rw_semaphore *sem) arch/x86/include/asm/rwsem.h:157:20 170:1 22901
+void __downgrade_write (structBUG rw_semaphore *sem) arch/x86/include/asm/rwsem.h:175:20 190:1 22946
+void rwsem_atomic_add (long int delta,structBUG rw_semaphore *sem) arch/x86/include/asm/rwsem.h:195:20 200:1 22981
+int rwsem_atomic_update (long int delta,structBUG rw_semaphore *sem) arch/x86/include/asm/rwsem.h:205:20 208:1 23013
+int rwsem_is_locked (structBUG rw_semaphore *sem) include/linux/rwsem.h:43:19 46:1 23171
+void init_completion (structBUG completion *x) include/linux/completion.h:73:20 77:1 23191
+void debug_object_init (void *addr,structBUG debug_obj_descr *descr) include/linux/debugobjects.h:85:1 85:44 23232
+void debug_object_init_on_stack (void *addr,structBUG debug_obj_descr *descr) include/linux/debugobjects.h:87:1 87:47 23246
+void debug_object_activate (void *addr,structBUG debug_obj_descr *descr) include/linux/debugobjects.h:89:1 89:44 23260
+void debug_object_deactivate (void *addr,structBUG debug_obj_descr *descr) include/linux/debugobjects.h:91:1 91:44 23274
+void debug_object_destroy (void *addr,structBUG debug_obj_descr *descr) include/linux/debugobjects.h:93:1 93:44 23288
+void debug_object_free (void *addr,structBUG debug_obj_descr *descr) include/linux/debugobjects.h:95:1 95:44 23302
+void debug_object_assert_init (void *addr,structBUG debug_obj_descr *descr) include/linux/debugobjects.h:97:1 97:45 23316
+void debug_objects_early_init () include/linux/debugobjects.h:99:20 99:1 23330
+void debug_objects_mem_init () include/linux/debugobjects.h:100:20 100:1 23336
+void debug_check_no_obj_freed (void *address,long unsigned int size) include/linux/debugobjects.h:107:1 107:1 23342
+void __rcu_read_lock () include/linux/rcupdate.h:162:20 165:1 23355
+void __rcu_read_unlock () include/linux/rcupdate.h:167:20 170:1 23361
+void synchronize_rcu () include/linux/rcupdate.h:172:20 175:1 23367
+int rcu_preempt_depth () include/linux/rcupdate.h:177:19 180:1 23376
+void rcu_virt_note_context_switch (int cpu) include/linux/rcutree.h:43:20 46:1 23385
+void synchronize_rcu_bh_expedited () include/linux/rcutree.h:70:20 73:1 23399
+void init_rcu_head_on_stack (structBUG rcu_head *head) include/linux/rcupdate.h:249:20 251:1 23408
+void destroy_rcu_head_on_stack (structBUG rcu_head *head) include/linux/rcupdate.h:253:20 255:1 23418
+bool rcu_lockdep_current_cpu_online () include/linux/rcupdate.h:261:20 264:1 23428
+int rcu_read_lock_held () include/linux/rcupdate.h:388:19 391:1 23437
+int rcu_read_lock_bh_held () include/linux/rcupdate.h:393:19 396:1 23446
+int rcu_read_lock_sched_held () include/linux/rcupdate.h:404:19 407:1 23455
+void rcu_read_lock () include/linux/rcupdate.h:724:20 731:1 23464
+void rcu_read_unlock () include/linux/rcupdate.h:748:20 755:1 23476
+void rcu_read_lock_bh () include/linux/rcupdate.h:774:20 781:1 23488
+void rcu_read_unlock_bh () include/linux/rcupdate.h:788:20 795:1 23500
+void rcu_read_lock_sched () include/linux/rcupdate.h:810:20 817:1 23512
+void rcu_read_lock_sched_notrace () include/linux/rcupdate.h:820:28 824:1 23519
+void rcu_read_unlock_sched () include/linux/rcupdate.h:831:20 838:1 23526
+void rcu_read_unlock_sched_notrace () include/linux/rcupdate.h:841:28 845:1 23533
+bool __is_kfree_rcu_offset (long unsigned int offset) include/linux/rcupdate.h:908:29 911:1 23540
+void __kfree_rcu (structBUG rcu_head *head,long unsigned int offset) include/linux/rcupdate.h:914:6 924:1 23555
+int timespec_equal (structBUG timespec *a,structBUG timespec *b) include/linux/time.h:45:19 49:1 23659
+int timespec_compare (structBUG timespec *lhs,structBUG timespec *rhs) include/linux/time.h:56:19 63:1 23706
+int timeval_compare (structBUG timeval *lhs,structBUG timeval *rhs) include/linux/time.h:65:19 72:1 23781
+timespec timespec_add (structBUG timespec lhs,structBUG timespec rhs) include/linux/time.h:89:31 96:1 23856
+timespec timespec_sub (structBUG timespec lhs,structBUG timespec rhs) include/linux/time.h:101:31 108:1 23907
+bool timespec_valid (structBUG timespec *ts) include/linux/time.h:120:20 129:1 23958
+bool timespec_valid_strict (structBUG timespec *ts) include/linux/time.h:131:20 139:1 24002
+u32 arch_gettimeoffset () include/linux/time.h:170:19 170:1 24045
+s64 timespec_to_ns (structBUG timespec *ts) include/linux/time.h:235:19 238:1 24054
+s64 timeval_to_ns (structBUG timeval *tv) include/linux/time.h:247:19 251:1 24084
+void timespec_add_ns (structBUG timespec *a,u64 ns) include/linux/time.h:277:29 281:1 24117
+cycles_t get_cycles () arch/x86/include/asm/tsc.h:22:24 33:1 24175
+cycles_t vget_cycles () arch/x86/include/asm/tsc.h:35:33 46:1 24198
+ktime_t ktime_set (long int secs,long unsigned int nsecs) include/linux/ktime.h:74:23 81:1 24211
+ktime_t timespec_to_ktime (structBUG timespec ts) include/linux/ktime.h:106:23 109:1 24229
+ktime_t timeval_to_ktime (structBUG timeval tv) include/linux/ktime.h:112:23 115:1 24255
+int ktime_equal (ktime_t cmp1,ktime_t cmp2) include/linux/ktime.h:280:19 283:1 24284
+s64 ktime_to_us (ktime_t kt) include/linux/ktime.h:285:19 289:1 24311
+s64 ktime_to_ms (ktime_t kt) include/linux/ktime.h:291:19 295:1 24343
+s64 ktime_us_delta (ktime_t later,ktime_t earlier) include/linux/ktime.h:297:19 300:1 24378
+ktime_t ktime_add_us (ktime_t kt,u64 usec) include/linux/ktime.h:302:23 305:1 24400
+ktime_t ktime_sub_us (ktime_t kt,u64 usec) include/linux/ktime.h:307:23 310:1 24418
+ktime_t ns_to_ktime (u64 ns) include/linux/ktime.h:329:23 333:1 24436
+void destroy_timer_on_stack (structBUG timer_list *timer) include/linux/timer.h:157:20 157:50 24456
+void init_timer_on_stack_key (structBUG timer_list *timer,char *name,structBUG lock_class_key *key) include/linux/timer.h:158:20 163:1 24466
+void setup_timer_key (structBUG timer_list *timer,char *name,structBUG lock_class_key *key,void long unsigned int void *function,long unsigned int data) include/linux/timer.h:166:20 175:1 24493
+void setup_timer_on_stack_key (structBUG timer_list *timer,char *name,structBUG lock_class_key *key,void long unsigned int void *function,long unsigned int data) include/linux/timer.h:177:20 186:1 24549
+int timer_pending (structBUG timer_list *timer) include/linux/timer.h:204:19 207:1 24605
+void timer_stats_timer_set_start_info (structBUG timer_list *timer) include/linux/timer.h:250:20 255:1 24628
+void timer_stats_timer_clear_start_info (structBUG timer_list *timer) include/linux/timer.h:257:20 260:1 24664
+delayed_work * to_delayed_work (structBUG work_struct *work) include/linux/workqueue.h:97:36 100:1 24681
+void __init_work (structBUG work_struct *work,int onstack) include/linux/workqueue.h:163:20 163:39 24708
+void destroy_work_on_stack (structBUG work_struct *work) include/linux/workqueue.h:164:20 164:49 24721
+int work_static (structBUG work_struct *work) include/linux/workqueue.h:165:28 165:47 24731
+bool cancel_delayed_work (structBUG delayed_work *work) include/linux/workqueue.h:410:20 418:1 24744
+bool __cancel_delayed_work (structBUG delayed_work *work) include/linux/workqueue.h:425:20 433:1 24800
+int srcu_read_lock_held (structBUG srcu_struct *sp) include/linux/srcu.h:149:19 152:1 24856
+int srcu_read_lock (structBUG srcu_struct *sp) include/linux/srcu.h:200:19 208:1 24869
+void srcu_read_unlock (structBUG srcu_struct *sp,int idx) include/linux/srcu.h:217:20 224:1 24888
+int srcu_read_lock_raw (structBUG srcu_struct *sp) include/linux/srcu.h:241:19 250:1 24908
+void srcu_read_unlock_raw (structBUG srcu_struct *sp,int idx) include/linux/srcu.h:260:20 267:1 25044
+int notifier_from_errno (int err) include/linux/notifier.h:165:19 171:1 25173
+int notifier_to_errno (int ret) include/linux/notifier.h:174:19 178:1 25201
+void pgdat_resize_lock (structBUG pglist_data *p,long unsigned int *f) include/linux/memory_hotplug.h:189:20 189:45 25230
+void pgdat_resize_unlock (structBUG pglist_data *p,long unsigned int *f) include/linux/memory_hotplug.h:190:20 190:47 25244
+void pgdat_resize_init (structBUG pglist_data *pgdat) include/linux/memory_hotplug.h:191:20 191:45 25258
+int zone_span_seqbegin (structBUG zone *zone) include/linux/memory_hotplug.h:193:24 196:1 25268
+int zone_span_seqretry (structBUG zone *zone,unsigned int iv) include/linux/memory_hotplug.h:197:19 200:1 25281
+void zone_span_writelock (structBUG zone *zone) include/linux/memory_hotplug.h:201:20 201:47 25297
+void zone_span_writeunlock (structBUG zone *zone) include/linux/memory_hotplug.h:202:20 202:49 25307
+void zone_seqlock_init (structBUG zone *zone) include/linux/memory_hotplug.h:203:20 203:45 25317
+int mhp_notimplemented (char *func) include/linux/memory_hotplug.h:205:19 210:1 25327
+void register_page_bootmem_info_node (structBUG pglist_data *pgdat) include/linux/memory_hotplug.h:212:20 214:1 25354
+void lock_memory_hotplug () include/linux/memory_hotplug.h:216:20 216:1 25364
+void unlock_memory_hotplug () include/linux/memory_hotplug.h:217:20 217:1 25370
+int is_mem_section_removable (long unsigned int pfn,long unsigned int nr_pages) include/linux/memory_hotplug.h:226:19 230:1 25376
+zone * lruvec_zone (structBUG lruvec *lruvec) include/linux/mmzone.h:737:28 744:1 25391
+void memory_present (int nid,long unsigned int start,long unsigned int end) include/linux/mmzone.h:749:20 749:1 25420
+int local_memory_node (int node_id) include/linux/mmzone.h:755:19 755:1 25435
+int populated_zone (structBUG zone *zone) include/linux/mmzone.h:767:19 770:1 25448
+int zone_movable_is_highmem () include/linux/mmzone.h:774:19 781:1 25468
+int is_highmem_idx (structBUG zone_type idx) include/linux/mmzone.h:783:19 791:1 25477
+int is_normal_idx (structBUG zone_type idx) include/linux/mmzone.h:793:19 796:1 25506
+int is_highmem (structBUG zone *zone) include/linux/mmzone.h:804:19 814:1 25522
+int is_normal (structBUG zone *zone) include/linux/mmzone.h:816:19 819:1 25555
+int is_dma32 (structBUG zone *zone) include/linux/mmzone.h:821:19 828:1 25583
+int is_dma (structBUG zone *zone) include/linux/mmzone.h:830:19 837:1 25596
+zone * zonelist_zone (structBUG zoneref *zoneref) include/linux/mmzone.h:902:28 905:1 25623
+int zonelist_zone_idx (structBUG zoneref *zoneref) include/linux/mmzone.h:907:19 910:1 25642
+int zonelist_node_idx (structBUG zoneref *zoneref) include/linux/mmzone.h:912:19 920:1 25660
+zoneref * first_zones_zonelist (structBUG zonelist *zonelist,structBUG zone_type highest_zoneidx,nodemask_t *nodes,structBUG zone **zone) include/linux/mmzone.h:952:31 959:1 25673
+int memmap_valid_within (long unsigned int pfn,structBUG page *page,structBUG zone *zone) include/linux/mmzone.h:1215:19 1219:1 25716
+bool is_ISA_range (u64 s,u64 e) arch/x86/include/asm/e820.h:135:20 138:1 25736
+resource_size_t resource_size (structBUG resource *res) include/linux/ioport.h:163:31 166:1 25760
+int resource_type (structBUG resource *res) include/linux/ioport.h:167:29 170:1 25790
+int check_region (resource_size_t s,resource_size_t n) include/linux/ioport.h:195:32 199:1 25811
+bool resource_overlaps (structBUG resource *r1,structBUG resource *r2) include/linux/ioport.h:227:20 230:1 25836
+void get_smp_config () arch/x86/include/asm/mpspec.h:60:20 63:1 25880
+void early_get_smp_config () arch/x86/include/asm/mpspec.h:65:20 68:1 25895
+void find_smp_config () arch/x86/include/asm/mpspec.h:70:20 73:1 25910
+int physids_coerce (physid_mask_t *map) arch/x86/include/asm/mpspec.h:149:29 152:1 25924
+void physids_promote (long unsigned int physids,physid_mask_t *map) arch/x86/include/asm/mpspec.h:154:20 158:1 25944
+void physid_set_mask_of_physid (int physid,physid_mask_t *map) arch/x86/include/asm/mpspec.h:160:20 164:1 25981
+int numa_node_id () arch/x86/include/asm/topology.h:100:19 103:1 26022
+int early_cpu_to_node (int cpu) arch/x86/include/asm/topology.h:109:19 112:1 26031
+void setup_node_to_cpumask_map () arch/x86/include/asm/topology.h:114:20 114:1 26043
+void arch_fix_phys_package_id (int num,u32 slot) arch/x86/include/asm/topology.h:132:20 134:1 26049
+int get_mp_bus_to_node (int busnum) arch/x86/include/asm/topology.h:149:19 152:1 26061
+void set_mp_bus_to_node (int busnum,int node) arch/x86/include/asm/topology.h:153:20 155:1 26073
+void set_apicid_to_node (int apicid,s16 node) arch/x86/include/asm/numa.h:45:20 47:1 26085
+int numa_cpu_node (int cpu) arch/x86/include/asm/numa.h:49:19 52:1 26097
+void numa_set_node (int cpu,int node) arch/x86/include/asm/numa.h:68:20 68:1 26109
+void numa_clear_node (int cpu) arch/x86/include/asm/numa.h:69:20 69:1 26121
+void init_cpu_to_node () arch/x86/include/asm/numa.h:70:20 70:1 26130
+void numa_add_cpu (int cpu) arch/x86/include/asm/numa.h:71:20 71:1 26136
+void numa_remove_cpu (int cpu) arch/x86/include/asm/numa.h:72:20 72:1 26145
+char readb (void *addr) arch/x86/include/asm/io.h:53:1 53:1 26154
+int readw (void *addr) arch/x86/include/asm/io.h:54:1 54:1 26192
+int readl (void *addr) arch/x86/include/asm/io.h:55:1 55:1 26230
+char __readb (void *addr) arch/x86/include/asm/io.h:57:1 57:1 26268
+int __readw (void *addr) arch/x86/include/asm/io.h:58:1 58:1 26305
+int __readl (void *addr) arch/x86/include/asm/io.h:59:1 59:1 26342
+void writeb (unsigned char val,void *addr) arch/x86/include/asm/io.h:61:1 61:1 26379
+void writew (short unsigned int val,void *addr) arch/x86/include/asm/io.h:62:1 62:1 26410
+void writel (unsigned int val,void *addr) arch/x86/include/asm/io.h:63:1 63:1 26441
+void __writeb (unsigned char val,void *addr) arch/x86/include/asm/io.h:65:1 65:1 26472
+void __writew (short unsigned int val,void *addr) arch/x86/include/asm/io.h:66:1 66:1 26502
+void __writel (unsigned int val,void *addr) arch/x86/include/asm/io.h:67:1 67:1 26532
+phys_addr_t virt_to_phys (void *address) arch/x86/include/asm/io.h:111:27 114:1 26562
+void * phys_to_virt (phys_addr_t address) arch/x86/include/asm/io.h:129:21 132:1 26580
+int isa_virt_to_bus (void *address) arch/x86/include/asm/io.h:144:28 147:1 26598
+void * ioremap (resource_size_t offset,long unsigned int size) arch/x86/include/asm/io.h:182:29 185:1 26617
+size_t get_vm_area_size (structBUG vm_struct *area) include/linux/vmalloc.h:80:22 84:1 26640
+void memset_io (void *addr,unsigned char val,size_t count) arch/x86/include/asm/io.h:203:1 206:1 26662
+void memcpy_fromio (void *dst,void *src,size_t count) arch/x86/include/asm/io.h:209:1 212:1 26689
+void memcpy_toio (void *dst,void *src,size_t count) arch/x86/include/asm/io.h:215:1 218:1 26716
+void flush_write_buffers () arch/x86/include/asm/io.h:238:20 243:1 26743
+void slow_down_io () arch/x86/include/asm/io.h:256:20 264:1 26755
+void outb (unsigned char value,int port) arch/x86/include/asm/io.h:308:1 308:1 26764
+char inb (int port) arch/x86/include/asm/io.h:308:1 308:1 26791
+void outb_p (unsigned char value,int port) arch/x86/include/asm/io.h:308:1 308:1 26825
+char inb_p (int port) arch/x86/include/asm/io.h:308:1 308:1 26850
+void outsb (int port,void *addr,long unsigned int count) arch/x86/include/asm/io.h:308:1 308:1 26872
+void insb (int port,void *addr,long unsigned int count) arch/x86/include/asm/io.h:308:1 308:1 26908
+void outw (short unsigned int value,int port) arch/x86/include/asm/io.h:309:1 309:1 26944
+int inw (int port) arch/x86/include/asm/io.h:309:1 309:1 26971
+void outw_p (short unsigned int value,int port) arch/x86/include/asm/io.h:309:1 309:1 27005
+int inw_p (int port) arch/x86/include/asm/io.h:309:1 309:1 27030
+void outsw (int port,void *addr,long unsigned int count) arch/x86/include/asm/io.h:309:1 309:1 27052
+void insw (int port,void *addr,long unsigned int count) arch/x86/include/asm/io.h:309:1 309:1 27088
+void outl (unsigned int value,int port) arch/x86/include/asm/io.h:310:1 310:1 27124
+int inl (int port) arch/x86/include/asm/io.h:310:1 310:1 27151
+void outl_p (unsigned int value,int port) arch/x86/include/asm/io.h:310:1 310:1 27185
+int inl_p (int port) arch/x86/include/asm/io.h:310:1 310:1 27209
+void outsl (int port,void *addr,long unsigned int count) arch/x86/include/asm/io.h:310:1 310:1 27231
+void insl (int port,void *addr,long unsigned int count) arch/x86/include/asm/io.h:310:1 310:1 27267
+void disable_acpi () arch/x86/include/asm/acpi.h:101:20 106:1 27303
+void acpi_noirq_set () arch/x86/include/asm/acpi.h:110:20 110:1 27321
+void acpi_disable_pci () arch/x86/include/asm/acpi.h:111:20 115:1 27330
+int acpi_processor_cstate_check (unsigned int max_cstate) arch/x86/include/asm/acpi.h:126:28 143:1 27344
+bool arch_has_acpi_pdc () arch/x86/include/asm/acpi.h:145:20 150:1 27396
+void arch_acpi_set_pdc_bits (u32 *buf) arch/x86/include/asm/acpi.h:152:20 169:1 27430
+void __set_fixmap (structBUG fixed_addresses idx,phys_addr_t phys,pgprot_t flags) arch/x86/include/asm/fixmap.h:171:20 175:1 27548
+int fix_to_virt (unsigned int idx) arch/x86/include/asm/fixmap.h:200:38 215:1 27572
+int virt_to_fix (long unsigned int vaddr) arch/x86/include/asm/fixmap.h:217:29 221:1 27602
+int __set_fixmap_offset (structBUG fixed_addresses idx,phys_addr_t phys,pgprot_t flags) arch/x86/include/asm/fixmap.h:225:1 229:1 27682
+void default_inquire_remote_apic (int apicid) arch/x86/include/asm/apic.h:61:20 65:1 27723
+bool apic_from_smp_config () arch/x86/include/asm/apic.h:75:20 78:1 27743
+int is_vsmp_box () arch/x86/include/asm/apic.h:90:19 93:1 27761
+void native_apic_mem_write (u32 reg,u32 v) arch/x86/include/asm/apic.h:100:20 107:1 27770
+u32 native_apic_mem_read (u32 reg) arch/x86/include/asm/apic.h:109:19 112:1 27819
+void disable_x2apic () arch/x86/include/asm/apic.h:206:20 208:1 27842
+void check_x2apic () arch/x86/include/asm/apic.h:209:20 211:1 27848
+void enable_x2apic () arch/x86/include/asm/apic.h:212:20 214:1 27854
+int x2apic_enabled () arch/x86/include/asm/apic.h:215:19 218:1 27860
+void x2apic_force_phys () arch/x86/include/asm/apic.h:219:20 221:1 27869
+int apic_is_clustered_box () arch/x86/include/asm/apic.h:257:19 260:1 27875
+u32 apic_read (u32 reg) arch/x86/include/asm/apic.h:432:19 435:1 27884
+void apic_write (u32 reg,u32 val) arch/x86/include/asm/apic.h:437:20 440:1 27904
+void apic_eoi () arch/x86/include/asm/apic.h:442:20 445:1 27926
+u64 apic_icr_read () arch/x86/include/asm/apic.h:447:19 450:1 27940
+void apic_icr_write (u32 low,u32 high) arch/x86/include/asm/apic.h:452:20 455:1 27955
+void apic_wait_icr_idle () arch/x86/include/asm/apic.h:457:20 460:1 27977
+u32 safe_apic_wait_icr_idle () arch/x86/include/asm/apic.h:462:19 465:1 27989
+void ack_APIC_irq () arch/x86/include/asm/apic.h:479:20 486:1 28004
+int default_get_apic_id (long unsigned int x) arch/x86/include/asm/apic.h:488:24 496:1 28013
+void default_wait_for_init_deassert (atomic_t *deassert) arch/x86/include/asm/apic.h:515:20 520:1 28064
+cpumask * default_target_cpus () arch/x86/include/asm/apic.h:531:37 538:1 28102
+int read_apic_id () arch/x86/include/asm/apic.h:543:28 550:1 28114
+int default_apic_id_valid (int apicid) arch/x86/include/asm/apic.h:552:19 555:1 28145
+int noop_x86_32_early_logical_apicid (int cpu) arch/x86/include/asm/apic.h:563:19 566:1 28160
+int default_apic_id_registered () arch/x86/include/asm/apic.h:577:19 580:1 28172
+int default_phys_pkg_id (int cpuid_apic,int index_msb) arch/x86/include/asm/apic.h:582:19 585:1 28196
+int default_cpu_mask_to_apicid (structBUG cpumask *cpumask) arch/x86/include/asm/apic.h:590:1 593:1 28215
+int default_cpu_mask_to_apicid_and (structBUG cpumask *cpumask,structBUG cpumask *andmask) arch/x86/include/asm/apic.h:596:1 604:1 28238
+int default_check_apicid_used (physid_mask_t *map,int apicid) arch/x86/include/asm/apic.h:606:29 609:1 28276
+int default_check_apicid_present (int bit) arch/x86/include/asm/apic.h:611:29 614:1 28331
+void default_ioapic_phys_id_map (physid_mask_t *phys_map,physid_mask_t *retmap) arch/x86/include/asm/apic.h:616:20 619:1 28380
+int __default_cpu_present_to_apicid (int mps_cpu) arch/x86/include/asm/apic.h:621:19 627:1 28400
+int __default_check_phys_apicid_present (int phys_apicid) arch/x86/include/asm/apic.h:630:1 633:1 28498
+int default_cpu_present_to_apicid (int mps_cpu) arch/x86/include/asm/apic.h:636:19 639:1 28545
+int default_check_phys_apicid_present (int phys_apicid) arch/x86/include/asm/apic.h:642:1 645:1 28562
+int invalid_vm86_irq (int irq) arch/x86/include/asm/irq_vectors.h:141:19 144:1 28579
+int io_apic_read (unsigned int apic,unsigned int reg) arch/x86/include/asm/io_apic.h:183:28 186:1 28597
+void io_apic_write (unsigned int apic,unsigned int reg,unsigned int value) arch/x86/include/asm/io_apic.h:188:20 191:1 28621
+void io_apic_modify (unsigned int apic,unsigned int reg,unsigned int value) arch/x86/include/asm/io_apic.h:192:20 195:1 28647
+bool cpu_has_ht_siblings () arch/x86/include/asm/smp.h:25:20 32:1 28673
+cpumask * cpu_sibling_mask (int cpu) arch/x86/include/asm/smp.h:41:31 44:1 28711
+cpumask * cpu_core_mask (int cpu) arch/x86/include/asm/smp.h:46:31 49:1 28776
+cpumask * cpu_llc_shared_mask (int cpu) arch/x86/include/asm/smp.h:51:31 54:1 28841
+void smp_send_stop () arch/x86/include/asm/smp.h:93:20 96:1 28906
+void stop_other_cpus () arch/x86/include/asm/smp.h:98:20 101:1 28918
+void smp_prepare_boot_cpu () arch/x86/include/asm/smp.h:103:20 106:1 28930
+void smp_prepare_cpus (unsigned int max_cpus) arch/x86/include/asm/smp.h:108:20 111:1 28941
+void smp_cpus_done (unsigned int max_cpus) arch/x86/include/asm/smp.h:113:20 116:1 28957
+int __cpu_up (unsigned int cpu,structBUG task_struct *tidle) arch/x86/include/asm/smp.h:118:19 121:1 28973
+int __cpu_disable () arch/x86/include/asm/smp.h:123:19 126:1 28998
+void __cpu_die (unsigned int cpu) arch/x86/include/asm/smp.h:128:20 131:1 29012
+void play_dead () arch/x86/include/asm/smp.h:133:20 136:1 29028
+void smp_send_reschedule (int cpu) arch/x86/include/asm/smp.h:138:20 141:1 29039
+void arch_send_call_function_single_ipi (int cpu) arch/x86/include/asm/smp.h:143:20 146:1 29055
+void arch_send_call_function_ipi_mask (structBUG cpumask *mask) arch/x86/include/asm/smp.h:148:20 151:1 29071
+int num_booting_cpus () arch/x86/include/asm/smp.h:173:19 176:1 29088
+int logical_smp_processor_id () arch/x86/include/asm/smp.h:213:19 217:1 29105
+int numa_mem_id () include/linux/topology.h:265:19 268:1 29121
+int allocflags_to_migratetype (gfp_t gfp_flags) include/linux/gfp.h:152:19 162:1 29133
+zone_type gfp_zone (gfp_t flags) include/linux/gfp.h:247:30 256:1 29219
+int gfp_zonelist (gfp_t flags) include/linux/gfp.h:265:19 271:1 29255
+zonelist * node_zonelist (int nid,gfp_t flags) include/linux/gfp.h:282:32 285:1 29275
+void arch_free_page (structBUG page *page,int order) include/linux/gfp.h:288:20 288:42 29304
+void arch_alloc_page (structBUG page *page,int order) include/linux/gfp.h:291:20 291:43 29317
+page * __alloc_pages (gfp_t gfp_mask,unsigned int order,structBUG zonelist *zonelist) include/linux/gfp.h:299:1 303:1 29330
+page * alloc_pages_node (int nid,gfp_t gfp_mask,unsigned int order) include/linux/gfp.h:305:28 313:1 29360
+page * alloc_pages_exact_node (int nid,gfp_t gfp_mask,unsigned int order) include/linux/gfp.h:315:28 321:1 29408
+void rb_set_parent (structBUG rb_node *rb,structBUG rb_node *p) include/linux/rbtree.h:123:20 126:1 29445
+void rb_set_color (structBUG rb_node *rb,int color) include/linux/rbtree.h:127:20 130:1 29477
+void rb_init_node (structBUG rb_node *rb) include/linux/rbtree.h:139:20 145:1 29508
+void rb_link_node (structBUG rb_node *node,structBUG rb_node *parent,structBUG rb_node **rb_link) include/linux/rbtree.h:168:20 175:1 29550
+void prio_tree_iter_init (structBUG prio_tree_iter *iter,structBUG prio_tree_root *root,long unsigned int r_index,long unsigned int h_index) include/linux/prio_tree.h:49:20 56:1 29600
+int prio_tree_empty (structBUG prio_tree_root *root) include/linux/prio_tree.h:84:19 87:1 29655
+int prio_tree_root (structBUG prio_tree_node *node) include/linux/prio_tree.h:89:19 92:1 29675
+int prio_tree_left_empty (structBUG prio_tree_node *node) include/linux/prio_tree.h:94:19 97:1 29697
+int prio_tree_right_empty (structBUG prio_tree_node *node) include/linux/prio_tree.h:99:19 102:1 29719
+int __debug_locks_off () include/linux/debug_locks.h:14:19 17:1 29741
+void debug_show_all_locks () include/linux/debug_locks.h:56:20 58:1 29873
+void debug_show_held_locks (structBUG task_struct *task) include/linux/debug_locks.h:60:20 62:1 29879
+void debug_check_no_locks_freed (void *from,long unsigned int len) include/linux/debug_locks.h:65:1 67:1 29889
+void debug_check_no_locks_held (structBUG task_struct *task) include/linux/debug_locks.h:70:1 72:1 29902
+void mm_init_cpumask (structBUG mm_struct *mm) include/linux/mm_types.h:394:20 399:1 29912
+cpumask_t * mm_cpumask (structBUG mm_struct *mm) include/linux/mm_types.h:402:26 405:1 29922
+resource_size_t cap_resource (u64 val) include/linux/range.h:23:31 29:1 29943
+void bit_spin_lock (int bitnum,long unsigned int *addr) include/linux/bit_spinlock.h:15:20 35:1 29965
+int bit_spin_trylock (int bitnum,long unsigned int *addr) include/linux/bit_spinlock.h:40:19 51:1 30056
+void bit_spin_unlock (int bitnum,long unsigned int *addr) include/linux/bit_spinlock.h:56:20 66:1 30099
+void __bit_spin_unlock (int bitnum,long unsigned int *addr) include/linux/bit_spinlock.h:73:20 83:1 30124
+int bit_spin_is_locked (int bitnum,long unsigned int *addr) include/linux/bit_spinlock.h:88:19 97:1 30149
+int pte_dirty (pte_t pte) arch/x86/include/asm/pgtable.h:90:19 93:1 30192
+int pte_young (pte_t pte) arch/x86/include/asm/pgtable.h:95:19 98:1 30212
+int pmd_young (pmd_t pmd) arch/x86/include/asm/pgtable.h:100:19 103:1 30232
+int pte_write (pte_t pte) arch/x86/include/asm/pgtable.h:105:19 108:1 30252
+int pte_file (pte_t pte) arch/x86/include/asm/pgtable.h:110:19 113:1 30272
+int pte_huge (pte_t pte) arch/x86/include/asm/pgtable.h:115:19 118:1 30292
+int pte_global (pte_t pte) arch/x86/include/asm/pgtable.h:120:19 123:1 30312
+int pte_exec (pte_t pte) arch/x86/include/asm/pgtable.h:125:19 128:1 30332
+int pte_special (pte_t pte) arch/x86/include/asm/pgtable.h:130:19 133:1 30352
+int pte_pfn (pte_t pte) arch/x86/include/asm/pgtable.h:135:29 138:1 30372
+int pmd_pfn (pmd_t pmd) arch/x86/include/asm/pgtable.h:140:29 143:1 30395
+int pmd_large (pmd_t pte) arch/x86/include/asm/pgtable.h:147:19 151:1 30418
+int pmd_trans_splitting (pmd_t pmd) arch/x86/include/asm/pgtable.h:154:19 157:1 30440
+int pmd_trans_huge (pmd_t pmd) arch/x86/include/asm/pgtable.h:159:19 162:1 30460
+int has_transparent_hugepage () arch/x86/include/asm/pgtable.h:164:19 167:1 30480
+pte_t pte_set_flags (pte_t pte,pteval_t set) arch/x86/include/asm/pgtable.h:170:21 175:1 30500
+pte_t pte_clear_flags (pte_t pte,pteval_t clear) arch/x86/include/asm/pgtable.h:177:21 182:1 30528
+pte_t pte_mkclean (pte_t pte) arch/x86/include/asm/pgtable.h:184:21 187:1 30557
+pte_t pte_mkold (pte_t pte) arch/x86/include/asm/pgtable.h:189:21 192:1 30575
+pte_t pte_wrprotect (pte_t pte) arch/x86/include/asm/pgtable.h:194:21 197:1 30593
+pte_t pte_mkexec (pte_t pte) arch/x86/include/asm/pgtable.h:199:21 202:1 30611
+pte_t pte_mkdirty (pte_t pte) arch/x86/include/asm/pgtable.h:204:21 207:1 30629
+pte_t pte_mkyoung (pte_t pte) arch/x86/include/asm/pgtable.h:209:21 212:1 30647
+pte_t pte_mkwrite (pte_t pte) arch/x86/include/asm/pgtable.h:214:21 217:1 30665
+pte_t pte_mkhuge (pte_t pte) arch/x86/include/asm/pgtable.h:219:21 222:1 30683
+pte_t pte_clrhuge (pte_t pte) arch/x86/include/asm/pgtable.h:224:21 227:1 30701
+pte_t pte_mkglobal (pte_t pte) arch/x86/include/asm/pgtable.h:229:21 232:1 30719
+pte_t pte_clrglobal (pte_t pte) arch/x86/include/asm/pgtable.h:234:21 237:1 30737
+pte_t pte_mkspecial (pte_t pte) arch/x86/include/asm/pgtable.h:239:21 242:1 30755
+pmd_t pmd_set_flags (pmd_t pmd,pmdval_t set) arch/x86/include/asm/pgtable.h:244:21 249:1 30773
+pmd_t pmd_clear_flags (pmd_t pmd,pmdval_t clear) arch/x86/include/asm/pgtable.h:251:21 256:1 30801
+pmd_t pmd_mkold (pmd_t pmd) arch/x86/include/asm/pgtable.h:258:21 261:1 30830
+pmd_t pmd_wrprotect (pmd_t pmd) arch/x86/include/asm/pgtable.h:263:21 266:1 30848
+pmd_t pmd_mkdirty (pmd_t pmd) arch/x86/include/asm/pgtable.h:268:21 271:1 30866
+pmd_t pmd_mkhuge (pmd_t pmd) arch/x86/include/asm/pgtable.h:273:21 276:1 30884
+pmd_t pmd_mkyoung (pmd_t pmd) arch/x86/include/asm/pgtable.h:278:21 281:1 30902
+pmd_t pmd_mkwrite (pmd_t pmd) arch/x86/include/asm/pgtable.h:283:21 286:1 30920
+pmd_t pmd_mknotpresent (pmd_t pmd) arch/x86/include/asm/pgtable.h:288:21 291:1 30938
+pgprotval_t massage_pgprot (pgprot_t pgprot) arch/x86/include/asm/pgtable.h:297:27 305:1 30956
+pte_t pfn_pte (long unsigned int page_nr,pgprot_t pgprot) arch/x86/include/asm/pgtable.h:307:21 311:1 30993
+pmd_t pfn_pmd (long unsigned int page_nr,pgprot_t pgprot) arch/x86/include/asm/pgtable.h:313:21 317:1 31024
+pte_t pte_modify (pte_t pte,pgprot_t newprot) arch/x86/include/asm/pgtable.h:319:21 331:1 31055
+pmd_t pmd_modify (pmd_t pmd,pgprot_t newprot) arch/x86/include/asm/pgtable.h:333:21 341:1 31104
+pgprot_t pgprot_modify (pgprot_t oldprot,pgprot_t newprot) arch/x86/include/asm/pgtable.h:345:24 350:1 31153
+int is_new_memtype_allowed (u64 paddr,long unsigned int size,long unsigned int flags,long unsigned int new_flags) arch/x86/include/asm/pgtable.h:356:19 380:1 31180
+void pgtable_cache_init () arch/x86/include/asm/pgtable_32.h:31:20 31:1 31243
+void check_pgt_cache () arch/x86/include/asm/pgtable_32.h:32:20 32:1 31249
+void native_set_pte (pte_t *ptep,pte_t pte) arch/x86/include/asm/pgtable-3level.h:27:20 32:1 31255
+pmd_t pmd_read_atomic (pmd_t *pmdp) arch/x86/include/asm/pgtable-3level.h:70:21 86:1 31307
+void native_set_pte_atomic (pte_t *ptep,pte_t pte) arch/x86/include/asm/pgtable-3level.h:88:20 91:1 31369
+void native_set_pmd (pmd_t *pmdp,pmd_t pmd) arch/x86/include/asm/pgtable-3level.h:93:20 96:1 31394
+void native_set_pud (pud_t *pudp,pud_t pud) arch/x86/include/asm/pgtable-3level.h:98:20 101:1 31419
+void native_pte_clear (structBUG mm_struct *mm,long unsigned int addr,pte_t *ptep) arch/x86/include/asm/pgtable-3level.h:108:20 114:1 31444
+void native_pmd_clear (pmd_t *pmd) arch/x86/include/asm/pgtable-3level.h:116:20 122:1 31488
+void native_pud_clear (pud_t *pudp) arch/x86/include/asm/pgtable-3level.h:124:20 138:1 31522
+pte_t native_ptep_get_and_clear (pte_t *ptep) arch/x86/include/asm/pgtable-3level.h:141:21 151:1 31541
+pmd_t native_pmdp_get_and_clear (pmd_t *pmdp) arch/x86/include/asm/pgtable-3level.h:164:21 174:1 31742
+int pte_none (pte_t pte) arch/x86/include/asm/pgtable.h:395:19 398:1 31951
+int pte_same (pte_t a,pte_t b) arch/x86/include/asm/pgtable.h:401:19 404:1 31969
+int pte_present (pte_t a) arch/x86/include/asm/pgtable.h:406:19 409:1 31994
+int pte_hidden (pte_t pte) arch/x86/include/asm/pgtable.h:411:19 414:1 32014
+int pmd_present (pmd_t pmd) arch/x86/include/asm/pgtable.h:416:19 419:1 32033
+int pmd_none (pmd_t pmd) arch/x86/include/asm/pgtable.h:421:19 426:1 32053
+int pmd_page_vaddr (pmd_t pmd) arch/x86/include/asm/pgtable.h:428:29 431:1 32073
+int pmd_index (long unsigned int address) arch/x86/include/asm/pgtable.h:445:29 448:1 32095
+int pte_index (long unsigned int address) arch/x86/include/asm/pgtable.h:465:29 468:1 32112
+pte_t * pte_offset_kernel (pmd_t *pmd,long unsigned int address) arch/x86/include/asm/pgtable.h:470:22 473:1 32129
+int pmd_bad (pmd_t pmd) arch/x86/include/asm/pgtable.h:475:19 478:1 32164
+int pages_to_mb (long unsigned int npg) arch/x86/include/asm/pgtable.h:480:29 483:1 32186
+int pud_none (pud_t pud) arch/x86/include/asm/pgtable.h:489:19 492:1 32201
+int pud_present (pud_t pud) arch/x86/include/asm/pgtable.h:494:19 497:1 32220
+int pud_page_vaddr (pud_t pud) arch/x86/include/asm/pgtable.h:499:29 502:1 32240
+pmd_t * pmd_offset (pud_t *pud,long unsigned int address) arch/x86/include/asm/pgtable.h:511:22 514:1 32265
+int pud_large (pud_t pud) arch/x86/include/asm/pgtable.h:516:19 520:1 32300
+int pud_bad (pud_t pud) arch/x86/include/asm/pgtable.h:522:19 525:1 32325
+pte_t native_local_ptep_get_and_clear (pte_t *ptep) arch/x86/include/asm/pgtable.h:602:21 609:1 32347
+pmd_t native_local_pmdp_get_and_clear (pmd_t *pmdp) arch/x86/include/asm/pgtable.h:611:21 617:1 32374
+void native_set_pte_at (structBUG mm_struct *mm,long unsigned int addr,pte_t *ptep,pte_t pte) arch/x86/include/asm/pgtable.h:619:20 623:1 32399
+void native_set_pmd_at (structBUG mm_struct *mm,long unsigned int addr,pmd_t *pmdp,pmd_t pmd) arch/x86/include/asm/pgtable.h:625:20 629:1 32426
+pte_t ptep_get_and_clear (structBUG mm_struct *mm,long unsigned int addr,pte_t *ptep) arch/x86/include/asm/pgtable.h:672:21 678:1 32453
+pte_t ptep_get_and_clear_full (structBUG mm_struct *mm,long unsigned int addr,pte_t *ptep,int full) arch/x86/include/asm/pgtable.h:681:21 696:1 32479
+void ptep_set_wrprotect (structBUG mm_struct *mm,long unsigned int addr,pte_t *ptep) arch/x86/include/asm/pgtable.h:699:20 704:1 32535
+int pmd_write (pmd_t pmd) arch/x86/include/asm/pgtable.h:729:19 732:1 32564
+pmd_t pmdp_get_and_clear (structBUG mm_struct *mm,long unsigned int addr,pmd_t *pmdp) arch/x86/include/asm/pgtable.h:735:21 741:1 32584
+void pmdp_set_wrprotect (structBUG mm_struct *mm,long unsigned int addr,pmd_t *pmdp) arch/x86/include/asm/pgtable.h:744:20 749:1 32610
+void clone_pgd_range (pgd_t *dst,pgd_t *src,int count) arch/x86/include/asm/pgtable.h:761:20 764:1 32634
+void pte_clear_not_present_full (structBUG mm_struct *mm,long unsigned int address,pte_t *ptep,int full) include/asm-generic/pgtable.h:113:20 119:1 32665
+int pmd_same (pmd_t pmd_a,pmd_t pmd_b) include/asm-generic/pgtable.h:174:19 177:1 32694
+int pgd_none_or_clear_bad (pgd_t *pgd) include/asm-generic/pgtable.h:255:19 264:1 32721
+int pud_none_or_clear_bad (pud_t *pud) include/asm-generic/pgtable.h:266:19 275:1 32779
+int pmd_none_or_clear_bad (pmd_t *pmd) include/asm-generic/pgtable.h:277:19 286:1 32837
+pte_t __ptep_modify_prot_start (structBUG mm_struct *mm,long unsigned int addr,pte_t *ptep) include/asm-generic/pgtable.h:288:21 298:1 32895
+void __ptep_modify_prot_commit (structBUG mm_struct *mm,long unsigned int addr,pte_t *ptep,pte_t pte) include/asm-generic/pgtable.h:300:20 309:1 32924
+pte_t ptep_modify_prot_start (structBUG mm_struct *mm,long unsigned int addr,pte_t *ptep) include/asm-generic/pgtable.h:326:21 331:1 32955
+void ptep_modify_prot_commit (structBUG mm_struct *mm,long unsigned int addr,pte_t *ptep,pte_t pte) include/asm-generic/pgtable.h:337:20 342:1 32984
+int pmd_none_or_trans_huge_or_clear_bad (pmd_t *pmd) include/asm-generic/pgtable.h:481:19 509:1 33015
+int pmd_trans_unstable (pmd_t *pmd) include/asm-generic/pgtable.h:524:19 531:1 33092
+int is_linear_pfn_mapping (structBUG vm_area_struct *vma) include/linux/mm.h:169:19 172:1 33110
+int is_pfn_mapping (structBUG vm_area_struct *vma) include/linux/mm.h:174:19 177:1 33132
+int PageLocked (structBUG page *page) include/linux/page-flags.h:197:1 197:1 33154
+int PageError (structBUG page *page) include/linux/page-flags.h:198:1 198:1 33179
+void SetPageError (structBUG page *page) include/linux/page-flags.h:198:1 198:1 33204
+void ClearPageError (structBUG page *page) include/linux/page-flags.h:198:1 198:1 33226
+int TestClearPageError (structBUG page *page) include/linux/page-flags.h:198:24 198:24 33248
+int PageReferenced (structBUG page *page) include/linux/page-flags.h:199:1 199:1 33273
+void SetPageReferenced (structBUG page *page) include/linux/page-flags.h:199:1 199:1 33298
+void ClearPageReferenced (structBUG page *page) include/linux/page-flags.h:199:1 199:1 33320
+int TestClearPageReferenced (structBUG page *page) include/linux/page-flags.h:199:34 199:34 33342
+int PageDirty (structBUG page *page) include/linux/page-flags.h:200:1 200:1 33367
+void SetPageDirty (structBUG page *page) include/linux/page-flags.h:200:1 200:1 33392
+void ClearPageDirty (structBUG page *page) include/linux/page-flags.h:200:1 200:1 33414
+int TestSetPageDirty (structBUG page *page) include/linux/page-flags.h:200:24 200:24 33436
+int TestClearPageDirty (structBUG page *page) include/linux/page-flags.h:200:24 200:24 33461
+void __ClearPageDirty (structBUG page *page) include/linux/page-flags.h:200:49 200:49 33486
+int PageLRU (structBUG page *page) include/linux/page-flags.h:201:1 201:1 33508
+void SetPageLRU (structBUG page *page) include/linux/page-flags.h:201:1 201:1 33533
+void ClearPageLRU (structBUG page *page) include/linux/page-flags.h:201:1 201:1 33555
+void __ClearPageLRU (structBUG page *page) include/linux/page-flags.h:201:20 201:20 33577
+int PageActive (structBUG page *page) include/linux/page-flags.h:202:1 202:1 33599
+void SetPageActive (structBUG page *page) include/linux/page-flags.h:202:1 202:1 33624
+void ClearPageActive (structBUG page *page) include/linux/page-flags.h:202:1 202:1 33646
+void __ClearPageActive (structBUG page *page) include/linux/page-flags.h:202:26 202:26 33668
+int TestClearPageActive (structBUG page *page) include/linux/page-flags.h:203:2 203:2 33690
+int PageSlab (structBUG page *page) include/linux/page-flags.h:204:1 204:1 33715
+void __SetPageSlab (structBUG page *page) include/linux/page-flags.h:204:1 204:1 33740
+void __ClearPageSlab (structBUG page *page) include/linux/page-flags.h:204:1 204:1 33762
+int PageChecked (structBUG page *page) include/linux/page-flags.h:205:1 205:1 33784
+void SetPageChecked (structBUG page *page) include/linux/page-flags.h:205:1 205:1 33809
+void ClearPageChecked (structBUG page *page) include/linux/page-flags.h:205:1 205:1 33831
+int PagePinned (structBUG page *page) include/linux/page-flags.h:206:1 206:1 33853
+void SetPagePinned (structBUG page *page) include/linux/page-flags.h:206:1 206:1 33878
+void ClearPagePinned (structBUG page *page) include/linux/page-flags.h:206:1 206:1 33900
+int TestSetPagePinned (structBUG page *page) include/linux/page-flags.h:206:26 206:26 33922
+int TestClearPagePinned (structBUG page *page) include/linux/page-flags.h:206:26 206:26 33947
+int PageSavePinned (structBUG page *page) include/linux/page-flags.h:207:1 207:1 33972
+void SetPageSavePinned (structBUG page *page) include/linux/page-flags.h:207:1 207:1 33997
+void ClearPageSavePinned (structBUG page *page) include/linux/page-flags.h:207:1 207:1 34019
+int PageReserved (structBUG page *page) include/linux/page-flags.h:208:1 208:1 34041
+void SetPageReserved (structBUG page *page) include/linux/page-flags.h:208:1 208:1 34066
+void ClearPageReserved (structBUG page *page) include/linux/page-flags.h:208:1 208:1 34088
+void __ClearPageReserved (structBUG page *page) include/linux/page-flags.h:208:30 208:30 34110
+int PageSwapBacked (structBUG page *page) include/linux/page-flags.h:209:1 209:1 34132
+void SetPageSwapBacked (structBUG page *page) include/linux/page-flags.h:209:1 209:1 34157
+void ClearPageSwapBacked (structBUG page *page) include/linux/page-flags.h:209:1 209:1 34179
+void __ClearPageSwapBacked (structBUG page *page) include/linux/page-flags.h:209:34 209:34 34201
+int PageSlobFree (structBUG page *page) include/linux/page-flags.h:211:1 211:1 34223
+void __SetPageSlobFree (structBUG page *page) include/linux/page-flags.h:211:1 211:1 34248
+void __ClearPageSlobFree (structBUG page *page) include/linux/page-flags.h:211:1 211:1 34270
+int PagePrivate (structBUG page *page) include/linux/page-flags.h:218:1 218:1 34292
+void SetPagePrivate (structBUG page *page) include/linux/page-flags.h:218:1 218:1 34317
+void ClearPagePrivate (structBUG page *page) include/linux/page-flags.h:218:1 218:1 34339
+void __SetPagePrivate (structBUG page *page) include/linux/page-flags.h:218:28 218:28 34361
+void __ClearPagePrivate (structBUG page *page) include/linux/page-flags.h:219:2 219:2 34383
+int PagePrivate2 (structBUG page *page) include/linux/page-flags.h:220:1 220:1 34405
+void SetPagePrivate2 (structBUG page *page) include/linux/page-flags.h:220:1 220:1 34430
+void ClearPagePrivate2 (structBUG page *page) include/linux/page-flags.h:220:1 220:1 34452
+int TestSetPagePrivate2 (structBUG page *page) include/linux/page-flags.h:220:31 220:31 34474
+int TestClearPagePrivate2 (structBUG page *page) include/linux/page-flags.h:220:31 220:31 34499
+int PageOwnerPriv1 (structBUG page *page) include/linux/page-flags.h:221:1 221:1 34524
+void SetPageOwnerPriv1 (structBUG page *page) include/linux/page-flags.h:221:1 221:1 34549
+void ClearPageOwnerPriv1 (structBUG page *page) include/linux/page-flags.h:221:1 221:1 34571
+int TestClearPageOwnerPriv1 (structBUG page *page) include/linux/page-flags.h:221:36 221:36 34593
+int PageWriteback (structBUG page *page) include/linux/page-flags.h:227:1 227:1 34618
+int TestSetPageWriteback (structBUG page *page) include/linux/page-flags.h:227:36 227:36 34643
+int TestClearPageWriteback (structBUG page *page) include/linux/page-flags.h:227:36 227:36 34668
+int PageMappedToDisk (structBUG page *page) include/linux/page-flags.h:228:1 228:1 34693
+void SetPageMappedToDisk (structBUG page *page) include/linux/page-flags.h:228:1 228:1 34718
+void ClearPageMappedToDisk (structBUG page *page) include/linux/page-flags.h:228:1 228:1 34740
+int PageReclaim (structBUG page *page) include/linux/page-flags.h:231:1 231:1 34762
+void SetPageReclaim (structBUG page *page) include/linux/page-flags.h:231:1 231:1 34787
+void ClearPageReclaim (structBUG page *page) include/linux/page-flags.h:231:1 231:1 34809
+int TestClearPageReclaim (structBUG page *page) include/linux/page-flags.h:231:28 231:28 34831
+int PageReadahead (structBUG page *page) include/linux/page-flags.h:232:1 232:1 34856
+void SetPageReadahead (structBUG page *page) include/linux/page-flags.h:232:1 232:1 34881
+void ClearPageReadahead (structBUG page *page) include/linux/page-flags.h:232:1 232:1 34903
+int PageSwapCache (structBUG page *page) include/linux/page-flags.h:245:1 245:1 34925
+void SetPageSwapCache (structBUG page *page) include/linux/page-flags.h:245:1 245:1 34950
+void ClearPageSwapCache (structBUG page *page) include/linux/page-flags.h:245:1 245:1 34972
+int PageUnevictable (structBUG page *page) include/linux/page-flags.h:251:1 251:1 34994
+void SetPageUnevictable (structBUG page *page) include/linux/page-flags.h:251:1 251:1 35019
+void ClearPageUnevictable (structBUG page *page) include/linux/page-flags.h:251:1 251:1 35041
+void __ClearPageUnevictable (structBUG page *page) include/linux/page-flags.h:251:36 251:36 35063
+int TestClearPageUnevictable (structBUG page *page) include/linux/page-flags.h:252:2 252:2 35085
+int PageMlocked (structBUG page *page) include/linux/page-flags.h:255:1 255:1 35110
+void SetPageMlocked (structBUG page *page) include/linux/page-flags.h:255:1 255:1 35135
+void ClearPageMlocked (structBUG page *page) include/linux/page-flags.h:255:1 255:1 35157
+void __ClearPageMlocked (structBUG page *page) include/linux/page-flags.h:255:28 255:28 35179
+int TestSetPageMlocked (structBUG page *page) include/linux/page-flags.h:256:2 256:2 35201
+int TestClearPageMlocked (structBUG page *page) include/linux/page-flags.h:256:2 256:2 35226
+int __TestClearPageMlocked (structBUG page *page) include/linux/page-flags.h:256:31 256:31 35251
+int PageUncached (structBUG page *page) include/linux/page-flags.h:263:1 263:1 35276
+void SetPageUncached (structBUG page *page) include/linux/page-flags.h:263:1 263:1 35301
+void ClearPageUncached (structBUG page *page) include/linux/page-flags.h:263:1 263:1 35323
+int PageHWPoison (structBUG page *page) include/linux/page-flags.h:273:1 273:1 35345
+int PageUptodate (structBUG page *page) include/linux/page-flags.h:279:19 295:1 35358
+void __SetPageUptodate (structBUG page *page) include/linux/page-flags.h:297:20 301:1 35390
+void SetPageUptodate (structBUG page *page) include/linux/page-flags.h:303:20 320:1 35420
+void ClearPageUptodate (structBUG page *page) include/linux/page-flags.h:322:1 322:1 35450
+void set_page_writeback (structBUG page *page) include/linux/page-flags.h:329:20 332:1 35472
+int PageHead (structBUG page *page) include/linux/page-flags.h:341:1 341:1 35487
+void __SetPageHead (structBUG page *page) include/linux/page-flags.h:341:1 341:1 35512
+void __ClearPageHead (structBUG page *page) include/linux/page-flags.h:341:1 341:1 35534
+void ClearPageHead (structBUG page *page) include/linux/page-flags.h:341:24 341:24 35556
+int PageTail (structBUG page *page) include/linux/page-flags.h:342:1 342:1 35578
+void __SetPageTail (structBUG page *page) include/linux/page-flags.h:342:1 342:1 35603
+void __ClearPageTail (structBUG page *page) include/linux/page-flags.h:342:1 342:1 35625
+int PageCompound (structBUG page *page) include/linux/page-flags.h:344:19 348:1 35647
+void ClearPageCompound (structBUG page *page) include/linux/page-flags.h:350:20 354:1 35668
+int PageTransHuge (structBUG page *page) include/linux/page-flags.h:412:19 416:1 35727
+int PageTransCompound (structBUG page *page) include/linux/page-flags.h:423:19 426:1 35749
+int PageTransTail (structBUG page *page) include/linux/page-flags.h:433:19 436:1 35767
+int page_has_private (structBUG page *page) include/linux/page-flags.h:496:19 499:1 35786
+int pmd_trans_huge_lock (pmd_t *pmd,structBUG vm_area_struct *vma) include/linux/huge_mm.h:122:19 130:1 35808
+void vma_adjust_trans_huge (structBUG vm_area_struct *vma,long unsigned int start,long unsigned int end,long int adjust_next) include/linux/huge_mm.h:131:20 139:1 35849
+int hpage_nr_pages (structBUG page *page) include/linux/huge_mm.h:140:19 145:1 35901
+page * compound_trans_head (structBUG page *page) include/linux/huge_mm.h:146:28 162:1 35936
+int put_page_testzero (structBUG page *page) include/linux/mm.h:275:19 279:1 36004
+int get_page_unless_zero (structBUG page *page) include/linux/mm.h:285:19 288:1 36036
+int is_vmalloc_addr (void *x) include/linux/mm.h:302:19 311:1 36067
+void compound_lock (structBUG page *page) include/linux/mm.h:321:20 327:1 36104
+void compound_unlock (structBUG page *page) include/linux/mm.h:329:20 335:1 36128
+int compound_lock_irqsave (structBUG page *page) include/linux/mm.h:337:29 345:1 36152
+void compound_unlock_irqrestore (structBUG page *page,long unsigned int flags) include/linux/mm.h:347:20 354:1 36201
+page * compound_head (structBUG page *page) include/linux/mm.h:356:28 361:1 36300
+void reset_page_mapcount (structBUG page *page) include/linux/mm.h:368:20 371:1 36345
+int page_mapcount (structBUG page *page) include/linux/mm.h:373:19 376:1 36374
+int page_count (structBUG page *page) include/linux/mm.h:378:19 381:1 36408
+void get_huge_page_tail (structBUG page *page) include/linux/mm.h:383:20 392:1 36442
+void get_page (structBUG page *page) include/linux/mm.h:396:20 407:1 36475
+page * virt_to_head_page (void *x) include/linux/mm.h:409:28 413:1 36540
+void init_page_count (structBUG page *page) include/linux/mm.h:419:20 422:1 36565
+int PageBuddy (structBUG page *page) include/linux/mm.h:435:19 438:1 36592
+void __SetPageBuddy (structBUG page *page) include/linux/mm.h:440:20 444:1 36626
+void __ClearPageBuddy (structBUG page *page) include/linux/mm.h:446:20 450:1 36658
+void set_compound_page_dtor (structBUG page *page,compound_page_dtor *dtor) include/linux/mm.h:465:20 469:1 36690
+compound_page_dtor * get_compound_page_dtor (structBUG page *page) include/linux/mm.h:471:35 474:1 36720
+int compound_order (structBUG page *page) include/linux/mm.h:476:19 481:1 36747
+int compound_trans_order (structBUG page *page) include/linux/mm.h:483:19 495:1 36789
+void set_compound_order (structBUG page *page,long unsigned int order) include/linux/mm.h:497:20 500:1 36853
+pte_t maybe_mkwrite (pte_t pte,structBUG vm_area_struct *vma) include/linux/mm.h:509:21 514:1 36882
+zone_type page_zonenum (structBUG page *page) include/linux/mm.h:658:30 661:1 36928
+int page_zone_id (structBUG page *page) include/linux/mm.h:671:19 674:1 36949
+int zone_to_nid (structBUG zone *zone) include/linux/mm.h:676:19 683:1 36970
+int page_to_nid (structBUG page *page) include/linux/mm.h:688:19 691:1 36983
+zone * page_zone (structBUG page *page) include/linux/mm.h:694:28 697:1 36996
+void set_page_zone (structBUG page *page,structBUG zone_type zone) include/linux/mm.h:712:20 716:1 37023
+void set_page_node (structBUG page *page,long unsigned int node) include/linux/mm.h:718:20 722:1 37070
+void set_page_links (structBUG page *page,structBUG zone_type zone,long unsigned int node,long unsigned int pfn) include/linux/mm.h:724:20 732:1 37109
+void __count_vm_event (structBUG vm_event_item item) include/linux/vmstat.h:30:20 33:1 37144
+void count_vm_event (structBUG vm_event_item item) include/linux/vmstat.h:35:20 38:1 38238
+void __count_vm_events (structBUG vm_event_item item,long int delta) include/linux/vmstat.h:40:20 43:1 39385
+void count_vm_events (structBUG vm_event_item item,long int delta) include/linux/vmstat.h:45:20 48:1 40610
+void zone_page_state_add (long int x,structBUG zone *zone,structBUG zone_stat_item item) include/linux/vmstat.h:92:20 97:1 41888
+int global_page_state (structBUG zone_stat_item item) include/linux/vmstat.h:99:29 107:1 41934
+int zone_page_state (structBUG zone *zone,structBUG zone_stat_item item) include/linux/vmstat.h:109:29 118:1 41963
+int zone_page_state_snapshot (structBUG zone *zone,structBUG zone_stat_item item) include/linux/vmstat.h:126:29 140:1 41996
+void zap_zone_vm_stats (structBUG zone *zone) include/linux/vmstat.h:182:20 185:1 42138
+void * lowmem_page_address (structBUG page *page) include/linux/mm.h:739:30 742:1 42161
+address_space * page_mapping (structBUG page *page) include/linux/mm.h:790:37 800:1 42189
+void * page_rmapping (structBUG page *page) include/linux/mm.h:803:21 806:1 42248
+int PageAnon (structBUG page *page) include/linux/mm.h:808:19 811:1 42271
+int page_index (structBUG page *page) include/linux/mm.h:817:23 822:1 42294
+int page_mapped (structBUG page *page) include/linux/mm.h:827:19 830:1 42346
+void unmap_shared_mapping_range (structBUG address_space *mapping,loff_t holebegin,loff_t holelen) include/linux/mm.h:945:20 949:1 42380
+int vma_growsdown (structBUG vm_area_struct *vma,long unsigned int addr) include/linux/mm.h:1013:19 1016:1 42406
+int stack_guard_page_start (structBUG vm_area_struct *vma,long unsigned int addr) include/linux/mm.h:1018:19 1024:1 42446
+int vma_growsup (structBUG vm_area_struct *vma,long unsigned int addr) include/linux/mm.h:1027:19 1030:1 42496
+int stack_guard_page_end (structBUG vm_area_struct *vma,long unsigned int addr) include/linux/mm.h:1032:19 1038:1 42512
+int get_mm_counter (structBUG mm_struct *mm,int member) include/linux/mm.h:1061:29 1074:1 42528
+void add_mm_counter (structBUG mm_struct *mm,int member,long int value) include/linux/mm.h:1076:20 1079:1 42561
+void inc_mm_counter (structBUG mm_struct *mm,int member) include/linux/mm.h:1081:20 1084:1 42595
+void dec_mm_counter (structBUG mm_struct *mm,int member) include/linux/mm.h:1086:20 1089:1 42624
+int get_mm_rss (structBUG mm_struct *mm) include/linux/mm.h:1091:29 1095:1 42653
+int get_mm_hiwater_rss (structBUG mm_struct *mm) include/linux/mm.h:1097:29 1100:1 42680
+int get_mm_hiwater_vm (structBUG mm_struct *mm) include/linux/mm.h:1102:29 1105:1 42713
+void update_hiwater_rss (structBUG mm_struct *mm) include/linux/mm.h:1107:20 1113:1 42746
+void update_hiwater_vm (structBUG mm_struct *mm) include/linux/mm.h:1115:20 1119:1 42780
+void setmax_mm_hiwater_rss (long unsigned int *maxrss,structBUG mm_struct *mm) include/linux/mm.h:1121:20 1128:1 42817
+pte_t * get_locked_pte (structBUG mm_struct *mm,long unsigned int addr,spinlock_t **ptl) include/linux/mm.h:1142:22 1148:1 42849
+int __pud_alloc (structBUG mm_struct *mm,pgd_t *pgd,long unsigned int address) include/linux/mm.h:1151:19 1155:1 42891
+pud_t * pud_alloc (structBUG mm_struct *mm,pgd_t *pgd,long unsigned int address) include/linux/mm.h:1179:22 1183:1 42911
+pmd_t * pmd_alloc (structBUG mm_struct *mm,pud_t *pud,long unsigned int address) include/linux/mm.h:1185:22 1189:1 42970
+void pgtable_page_ctor (structBUG page *page) include/linux/mm.h:1214:20 1218:1 43029
+void pgtable_page_dtor (structBUG page *page) include/linux/mm.h:1220:20 1224:1 43077
+void vma_nonlinear_insert (structBUG vm_area_struct *vma,structBUG list_head *list) include/linux/mm.h:1350:20 1355:1 43102
+vm_area_struct * find_vma_intersection (structBUG mm_struct *mm,long unsigned int start_addr,long unsigned int end_addr) include/linux/mm.h:1463:39 1470:1 43149
+int vma_pages (structBUG vm_area_struct *vma) include/linux/mm.h:1472:29 1475:1 43196
+vm_area_struct * find_exact_vma (structBUG mm_struct *mm,long unsigned int vm_start,long unsigned int vm_end) include/linux/mm.h:1478:38 1487:1 43223
+void kernel_map_pages (structBUG page *page,int numpages,int enable) include/linux/mm.h:1541:1 1541:25 43280
+bool kernel_page_present (structBUG page *page) include/linux/mm.h:1543:20 1543:47 43296
+int debug_guardpage_minorder () include/linux/mm.h:1629:28 1629:1 43309
+bool page_is_guard (structBUG page *page) include/linux/mm.h:1630:20 1630:41 43318
+void sg_assign_page (structBUG scatterlist *sg,structBUG page *page) include/linux/scatterlist.h:57:20 71:1 43331
+void sg_set_page (structBUG scatterlist *sg,structBUG page *page,unsigned int len,unsigned int offset) include/linux/scatterlist.h:87:20 93:1 43403
+page * sg_page (structBUG scatterlist *sg) include/linux/scatterlist.h:95:28 102:1 43449
+void sg_set_buf (structBUG scatterlist *sg,void *buf,unsigned int buflen) include/linux/scatterlist.h:111:20 115:1 43471
+void sg_chain (structBUG scatterlist *prv,unsigned int prv_nents,structBUG scatterlist *sgl) include/linux/scatterlist.h:133:20 151:1 43513
+void sg_mark_end (structBUG scatterlist *sg) include/linux/scatterlist.h:162:20 172:1 43584
+dma_addr_t sg_phys (structBUG scatterlist *sg) include/linux/scatterlist.h:184:26 187:1 43624
+void * sg_virt (structBUG scatterlist *sg) include/linux/scatterlist.h:199:21 202:1 43662
+void kref_init (structBUG kref *kref) include/linux/kref.h:30:20 33:1 43694
+void kref_get (structBUG kref *kref) include/linux/kref.h:39:20 43:1 43715
+int kref_sub (structBUG kref *kref,unsigned int count,void structBUG kref *void *release) include/linux/kref.h:63:19 73:1 43777
+int kref_put (structBUG kref *kref,void structBUG kref *void *release) include/linux/kref.h:92:19 95:1 43871
+char * kobject_name (structBUG kobject *kobj) include/linux/kobject.h:80:27 83:1 43900
+kset * to_kset (structBUG kobject *kobj) include/linux/kobject.h:173:28 176:1 43920
+kset * kset_get (structBUG kset *k) include/linux/kobject.h:178:28 181:1 43955
+void kset_put (structBUG kset *k) include/linux/kobject.h:183:20 186:1 43989
+kobj_type * get_ktype (structBUG kobject *kobj) include/linux/kobject.h:188:33 191:1 44009
+void ratelimit_state_init (structBUG ratelimit_state *rs,int interval,int burst) include/linux/ratelimit.h:28:20 37:1 44028
+bool device_can_wakeup (structBUG device *dev) include/linux/pm_wakeup.h:72:20 75:1 44097
+bool device_may_wakeup (structBUG device *dev) include/linux/pm_wakeup.h:77:20 80:1 44121
+void wakeup_source_init (structBUG wakeup_source *ws,char *name) include/linux/pm_wakeup.h:182:20 187:1 44156
+void wakeup_source_trash (structBUG wakeup_source *ws) include/linux/pm_wakeup.h:189:20 193:1 44184
+char * dev_name (structBUG device *dev) include/linux/device.h:695:27 702:1 44206
+int dev_to_node (structBUG device *dev) include/linux/device.h:717:19 720:1 44251
+void set_dev_node (structBUG device *dev,int node) include/linux/device.h:721:20 723:1 44264
+pm_subsys_data * dev_to_psd (structBUG device *dev) include/linux/device.h:726:38 729:1 44277
+int dev_get_uevent_suppress (structBUG device *dev) include/linux/device.h:731:28 734:1 44305
+void dev_set_uevent_suppress (structBUG device *dev,int val) include/linux/device.h:736:20 739:1 44327
+int device_is_registered (structBUG device *dev) include/linux/device.h:741:19 744:1 44353
+void device_enable_async_suspend (structBUG device *dev) include/linux/device.h:746:20 750:1 44375
+void device_disable_async_suspend (structBUG device *dev) include/linux/device.h:752:20 756:1 44408
+bool device_async_suspend_enabled (structBUG device *dev) include/linux/device.h:758:20 761:1 44441
+void pm_suspend_ignore_children (structBUG device *dev,bool enable) include/linux/device.h:763:20 766:1 44463
+void device_lock (structBUG device *dev) include/linux/device.h:768:20 771:1 44487
+int device_trylock (structBUG device *dev) include/linux/device.h:773:19 776:1 44507
+void device_unlock (structBUG device *dev) include/linux/device.h:778:20 781:1 44530
+void * dev_get_platdata (structBUG device *dev) include/linux/device.h:820:21 823:1 44550
+bool virtio_has_feature (structBUG virtio_device *vdev,unsigned int fbit) include/linux/virtio_config.h:130:20 143:1 44570
+int virtio_config_buf (structBUG virtio_device *vdev,unsigned int fbit,unsigned int offset,void *buf,unsigned int len) include/linux/virtio_config.h:160:19 170:1 44718
+virtqueue * virtio_find_single_vq (structBUG virtio_device *vdev,vq_callback_t *c,char *n) include/linux/virtio_config.h:173:19 183:1 44781
+char * virtio_bus_name (structBUG virtio_device *vdev) include/linux/virtio_config.h:186:13 191:1 44843
+kernel_cap_t cap_combine (kernel_cap_t a,kernel_cap_t b) include/linux/capability.h:455:28 461:1 44890
+kernel_cap_t cap_intersect (kernel_cap_t a,kernel_cap_t b) include/linux/capability.h:463:28 469:1 44970
+kernel_cap_t cap_drop (kernel_cap_t a,kernel_cap_t drop) include/linux/capability.h:471:28 477:1 45050
+kernel_cap_t cap_invert (kernel_cap_t c) include/linux/capability.h:479:28 484:1 45131
+int cap_isclear (kernel_cap_t a) include/linux/capability.h:486:19 494:1 45198
+int cap_issubset (kernel_cap_t a,kernel_cap_t set) include/linux/capability.h:503:19 508:1 45257
+int cap_is_fs_cap (int cap) include/linux/capability.h:512:19 516:1 45293
+kernel_cap_t cap_drop_fs_set (kernel_cap_t a) include/linux/capability.h:518:28 522:1 45330
+kernel_cap_t cap_raise_fs_set (kernel_cap_t a,kernel_cap_t permitted) include/linux/capability.h:524:28 530:1 45354
+kernel_cap_t cap_drop_nfsd_set (kernel_cap_t a) include/linux/capability.h:532:28 536:1 45387
+kernel_cap_t cap_raise_nfsd_set (kernel_cap_t a,kernel_cap_t permitted) include/linux/capability.h:538:28 544:1 45411
+void __gen_sigaddset (sigset_t *set,int _sig) arch/x86/include/asm/signal.h:198:20 201:1 45444
+void __const_sigaddset (sigset_t *set,int _sig) arch/x86/include/asm/signal.h:203:20 207:1 45476
+void __gen_sigdelset (sigset_t *set,int _sig) arch/x86/include/asm/signal.h:215:20 218:1 45527
+void __const_sigdelset (sigset_t *set,int _sig) arch/x86/include/asm/signal.h:220:20 224:1 45559
+int __const_sigismember (sigset_t *set,int _sig) arch/x86/include/asm/signal.h:226:19 230:1 45611
+int __gen_sigismember (sigset_t *set,int _sig) arch/x86/include/asm/signal.h:232:19 238:1 45651
+int sigfindinword (long unsigned int word) arch/x86/include/asm/signal.h:245:19 249:1 45698
+void copy_siginfo (structBUG siginfo *to,structBUG siginfo *from) include/asm-generic/siginfo.h:317:20 324:1 45730
+int sigisemptyset (sigset_t *set) include/linux/signal.h:76:19 91:1 45774
+void sigorsets (sigset_t *r,sigset_t *a,sigset_t *b) include/linux/signal.h:123:1 123:1 45886
+void sigandsets (sigset_t *r,sigset_t *a,sigset_t *b) include/linux/signal.h:126:1 126:1 46108
+void sigandnsets (sigset_t *r,sigset_t *a,sigset_t *b) include/linux/signal.h:129:1 129:1 46330
+void signotset (sigset_t *set) include/linux/signal.h:153:1 153:1 46556
+void sigemptyset (sigset_t *set) include/linux/signal.h:158:20 168:1 46666
+void sigfillset (sigset_t *set) include/linux/signal.h:170:20 180:1 46727
+void sigaddsetmask (sigset_t *set,long unsigned int mask) include/linux/signal.h:184:20 187:1 46788
+void sigdelsetmask (sigset_t *set,long unsigned int mask) include/linux/signal.h:189:20 192:1 46820
+int sigtestsetmask (sigset_t *set,long unsigned int mask) include/linux/signal.h:194:19 197:1 46853
+void siginitset (sigset_t *set,long unsigned int mask) include/linux/signal.h:199:20 209:1 46881
+void siginitsetinv (sigset_t *set,long unsigned int mask) include/linux/signal.h:211:20 221:1 46951
+void init_sigpending (structBUG sigpending *sig) include/linux/signal.h:225:20 229:1 47022
+int valid_signal (long unsigned int sig) include/linux/signal.h:234:19 237:1 47054
+pid * get_pid (structBUG pid *pid) include/linux/pid.h:75:27 80:1 47069
+pid_namespace * ns_of_pid (structBUG pid *pid) include/linux/pid.h:135:37 141:1 47102
+bool is_child_reaper (structBUG pid *pid) include/linux/pid.h:149:20 152:1 47148
+pid_t pid_nr (structBUG pid *pid) include/linux/pid.h:165:21 171:1 47178
+void percpu_counter_add (structBUG percpu_counter *fbc,s64 amount) include/linux/percpu_counter.h:45:20 48:1 47217
+s64 percpu_counter_sum_positive (structBUG percpu_counter *fbc) include/linux/percpu_counter.h:50:19 54:1 47239
+s64 percpu_counter_sum (structBUG percpu_counter *fbc) include/linux/percpu_counter.h:56:19 59:1 47260
+s64 percpu_counter_read (structBUG percpu_counter *fbc) include/linux/percpu_counter.h:61:19 64:1 47278
+s64 percpu_counter_read_positive (structBUG percpu_counter *fbc) include/linux/percpu_counter.h:71:19 79:1 47296
+int percpu_counter_initialized (structBUG percpu_counter *fbc) include/linux/percpu_counter.h:81:19 84:1 47332
+void percpu_counter_inc (structBUG percpu_counter *fbc) include/linux/percpu_counter.h:162:20 165:1 47352
+void percpu_counter_dec (structBUG percpu_counter *fbc) include/linux/percpu_counter.h:167:20 170:1 47368
+void percpu_counter_sub (structBUG percpu_counter *fbc,s64 amount) include/linux/percpu_counter.h:172:20 175:1 47384
+void prop_inc_percpu (structBUG prop_descriptor *pd,structBUG prop_local_percpu *pl) include/linux/proportions.h:71:6 78:1 47405
+void prop_inc_single (structBUG prop_descriptor *pd,structBUG prop_local_single *pl) include/linux/proportions.h:127:6 134:1 47535
+int secure_computing (int this_syscall) include/linux/seccomp.h:71:19 76:1 47665
+void secure_computing_strict (int this_syscall) include/linux/seccomp.h:79:20 82:1 47707
+int seccomp_mode (structBUG seccomp *s) include/linux/seccomp.h:87:19 90:1 47757
+void __list_add_rcu (structBUG list_head *new,structBUG list_head *prev,structBUG list_head *next) include/linux/rculist.h:34:20 41:1 47775
+void list_add_rcu (structBUG list_head *new,structBUG list_head *head) include/linux/rculist.h:63:20 66:1 47842
+void list_add_tail_rcu (structBUG list_head *new,structBUG list_head *head) include/linux/rculist.h:84:20 88:1 47869
+void list_del_rcu (structBUG list_head *entry) include/linux/rculist.h:114:20 118:1 47896
+void hlist_del_init_rcu (structBUG hlist_node *n) include/linux/rculist.h:140:20 146:1 47920
+void list_replace_rcu (structBUG list_head *old,structBUG list_head *new) include/linux/rculist.h:156:20 164:1 47955
+void list_splice_init_rcu (structBUG list_head *list,structBUG list_head *head,void void *sync) include/linux/rculist.h:183:20 219:1 48042
+void hlist_del_rcu (structBUG hlist_node *n) include/linux/rculist.h:339:20 343:1 48148
+void hlist_replace_rcu (structBUG hlist_node *old,structBUG hlist_node *new) include/linux/rculist.h:352:20 363:1 48172
+void hlist_add_head_rcu (structBUG hlist_node *n,structBUG hlist_head *h) include/linux/rculist.h:391:20 401:1 48268
+void hlist_add_before_rcu (structBUG hlist_node *n,structBUG hlist_node *next) include/linux/rculist.h:421:20 428:1 48352
+void hlist_add_after_rcu (structBUG hlist_node *prev,structBUG hlist_node *n) include/linux/rculist.h:448:20 456:1 48425
+void plist_head_init (structBUG plist_head *head) include/linux/plist.h:117:1 120:1 48516
+void plist_node_init (structBUG plist_node *node,int prio) include/linux/plist.h:127:20 132:1 48536
+int plist_head_empty (structBUG plist_head *head) include/linux/plist.h:181:19 184:1 48580
+int plist_node_empty (structBUG plist_node *node) include/linux/plist.h:190:19 193:1 48603
+plist_node * plist_first (structBUG plist_head *head) include/linux/plist.h:237:34 241:1 48626
+plist_node * plist_last (structBUG plist_head *head) include/linux/plist.h:249:34 253:1 48655
+int rt_mutex_debug_check_no_locks_freed (void *from,long unsigned int len) include/linux/rtmutex.h:48:20 52:2 48684
+int rt_mutex_is_locked (structBUG rt_mutex *lock) include/linux/rtmutex.h:82:19 85:1 48700
+timerqueue_node * timerqueue_getnext (structBUG timerqueue_head *head) include/linux/timerqueue.h:35:25 38:1 48720
+void timerqueue_init (structBUG timerqueue_node *node) include/linux/timerqueue.h:40:20 43:1 48739
+void timerqueue_init_head (structBUG timerqueue_head *head) include/linux/timerqueue.h:45:20 49:1 48759
+void hrtimer_set_expires (structBUG hrtimer *timer,ktime_t time) include/linux/hrtimer.h:195:20 199:1 48788
+void hrtimer_set_expires_range (structBUG hrtimer *timer,ktime_t time,ktime_t delta) include/linux/hrtimer.h:201:20 205:1 48822
+void hrtimer_set_expires_range_ns (structBUG hrtimer *timer,ktime_t time,long unsigned int delta) include/linux/hrtimer.h:207:20 211:1 48865
+void hrtimer_set_expires_tv64 (structBUG hrtimer *timer,s64 tv64) include/linux/hrtimer.h:213:20 217:1 48913
+void hrtimer_add_expires (structBUG hrtimer *timer,ktime_t time) include/linux/hrtimer.h:219:20 223:1 48953
+void hrtimer_add_expires_ns (structBUG hrtimer *timer,u64 ns) include/linux/hrtimer.h:225:20 229:1 49010
+ktime_t hrtimer_get_expires (structBUG hrtimer *timer) include/linux/hrtimer.h:231:23 234:1 49048
+ktime_t hrtimer_get_softexpires (structBUG hrtimer *timer) include/linux/hrtimer.h:236:23 239:1 49070
+s64 hrtimer_get_expires_tv64 (structBUG hrtimer *timer) include/linux/hrtimer.h:241:19 244:1 49089
+s64 hrtimer_get_softexpires_tv64 (structBUG hrtimer *timer) include/linux/hrtimer.h:245:19 248:1 49114
+s64 hrtimer_get_expires_ns (structBUG hrtimer *timer) include/linux/hrtimer.h:250:19 253:1 49136
+ktime_t hrtimer_expires_remaining (structBUG hrtimer *timer) include/linux/hrtimer.h:255:23 258:1 49161
+ktime_t hrtimer_cb_get_time (structBUG hrtimer *timer) include/linux/hrtimer.h:268:23 271:1 49177
+int hrtimer_is_hres_active (structBUG hrtimer *timer) include/linux/hrtimer.h:273:19 276:1 49200
+void hrtimer_init_on_stack (structBUG hrtimer *timer,clockid_t which_clock,structBUG hrtimer_mode mode) include/linux/hrtimer.h:347:20 352:1 49226
+void destroy_hrtimer_on_stack (structBUG hrtimer *timer) include/linux/hrtimer.h:353:20 353:52 49251
+int hrtimer_start_expires (structBUG hrtimer *timer,structBUG hrtimer_mode mode) include/linux/hrtimer.h:369:19 378:1 49261
+int hrtimer_restart (structBUG hrtimer *timer) include/linux/hrtimer.h:380:19 383:1 49332
+int hrtimer_active (structBUG hrtimer *timer) include/linux/hrtimer.h:396:19 399:1 49351
+int hrtimer_is_queued (structBUG hrtimer *timer) include/linux/hrtimer.h:404:19 407:1 49372
+int hrtimer_callback_running (structBUG hrtimer *timer) include/linux/hrtimer.h:413:19 416:1 49393
+u64 hrtimer_forward_now (structBUG hrtimer *timer,ktime_t interval) include/linux/hrtimer.h:423:19 427:1 49414
+void account_scheduler_latency (structBUG task_struct *task,int usecs,int inter) include/linux/latencytop.h:43:1 45:1 49448
+void clear_all_latency_tracing (structBUG task_struct *p) include/linux/latencytop.h:47:20 49:1 49464
+void * proc_sys_poll_event (structBUG ctl_table_poll *poll) include/linux/sysctl.h:1001:21 1004:1 49474
+key_ref_t make_key_ref (structBUG key *key,long unsigned int possession) include/linux/key.h:100:25 104:1 49500
+key * key_ref_to_ptr (key_ref_t key_ref) include/linux/key.h:106:27 109:1 49522
+int is_key_possessed (key_ref_t key_ref) include/linux/key.h:111:29 114:1 49540
+key * key_get (structBUG key *key) include/linux/key.h:210:27 215:1 49556
+void key_ref_put (key_ref_t key_ref) include/linux/key.h:217:20 220:1 49589
+key_serial_t key_serial (structBUG key *key) include/linux/key.h:281:28 284:1 49607
+bool key_is_instantiated (structBUG key *key) include/linux/key.h:295:20 299:1 49632
+uid_t __kuid_val (kuid_t uid) include/linux/uidgid.h:49:21 52:1 49676
+gid_t __kgid_val (kgid_t gid) include/linux/uidgid.h:54:21 57:1 49690
+bool uid_eq (kuid_t left,kuid_t right) include/linux/uidgid.h:70:20 73:1 49704
+bool gid_eq (kgid_t left,kgid_t right) include/linux/uidgid.h:75:20 78:1 49731
+bool uid_gt (kuid_t left,kuid_t right) include/linux/uidgid.h:80:20 83:1 49758
+bool gid_gt (kgid_t left,kgid_t right) include/linux/uidgid.h:85:20 88:1 49785
+bool uid_gte (kuid_t left,kuid_t right) include/linux/uidgid.h:90:20 93:1 49812
+bool gid_gte (kgid_t left,kgid_t right) include/linux/uidgid.h:95:20 98:1 49839
+bool uid_lt (kuid_t left,kuid_t right) include/linux/uidgid.h:100:20 103:1 49866
+bool gid_lt (kgid_t left,kgid_t right) include/linux/uidgid.h:105:20 108:1 49893
+bool uid_lte (kuid_t left,kuid_t right) include/linux/uidgid.h:110:20 113:1 49920
+bool gid_lte (kgid_t left,kgid_t right) include/linux/uidgid.h:115:20 118:1 49947
+bool uid_valid (kuid_t uid) include/linux/uidgid.h:120:20 123:1 49974
+bool gid_valid (kgid_t gid) include/linux/uidgid.h:125:20 128:1 49997
+kuid_t make_kuid (structBUG user_namespace *from,uid_t uid) include/linux/uidgid.h:152:22 155:1 50020
+kgid_t make_kgid (structBUG user_namespace *from,gid_t gid) include/linux/uidgid.h:157:22 160:1 50038
+uid_t from_kuid (structBUG user_namespace *to,kuid_t kuid) include/linux/uidgid.h:162:21 165:1 50056
+gid_t from_kgid (structBUG user_namespace *to,kgid_t kgid) include/linux/uidgid.h:167:21 170:1 50077
+uid_t from_kuid_munged (structBUG user_namespace *to,kuid_t kuid) include/linux/uidgid.h:172:21 178:1 50098
+gid_t from_kgid_munged (structBUG user_namespace *to,kgid_t kgid) include/linux/uidgid.h:180:21 186:1 50132
+bool kuid_has_mapping (structBUG user_namespace *ns,kuid_t uid) include/linux/uidgid.h:188:20 191:1 50166
+bool kgid_has_mapping (structBUG user_namespace *ns,kgid_t gid) include/linux/uidgid.h:193:20 196:1 50182
+group_info * get_group_info (structBUG group_info *gi) include/linux/cred.h:49:34 53:1 50198
+void validate_creds (structBUG cred *cred) include/linux/cred.h:202:20 204:1 50225
+void validate_creds_for_do_exit (structBUG task_struct *tsk) include/linux/cred.h:205:20 207:1 50235
+void validate_process_creds () include/linux/cred.h:208:20 210:1 50245
+cred * get_new_cred (structBUG cred *cred) include/linux/cred.h:220:28 224:1 50251
+cred * get_cred (structBUG cred *cred) include/linux/cred.h:239:34 244:1 50278
+void put_cred (structBUG cred *_cred) include/linux/cred.h:257:20 264:1 50310
+void init_llist_head (structBUG llist_head *list) include/linux/llist.h:76:20 79:1 50353
+bool llist_empty (structBUG llist_head *head) include/linux/llist.h:135:20 138:1 50370
+llist_node * llist_next (structBUG llist_node *node) include/linux/llist.h:140:34 143:1 50393
+bool llist_add (structBUG llist_node *new,structBUG llist_head *head) include/linux/llist.h:152:20 166:1 50412
+llist_node * llist_del_all (structBUG llist_head *head) include/linux/llist.h:176:34 179:1 50687
+void show_state () include/linux/sched.h:289:20 292:1 50841
+size_t iov_length (structBUG iovec *iov,long unsigned int nr_segs) include/linux/uio.h:43:22 51:1 50851
+kiocb * list_kiocb (structBUG list_head *h) include/linux/aio.h:231:29 234:1 50922
+int signal_group_exit (structBUG signal_struct *sig) include/linux/sched.h:697:19 701:1 50951
+int sched_info_on () include/linux/sched.h:798:19 808:1 50983
+cpumask * sched_group_cpus (structBUG sched_group *sg) include/linux/sched.h:901:31 904:1 50992
+cpumask * sched_group_mask (structBUG sched_group *sg) include/linux/sched.h:910:31 913:1 51013
+int group_first_cpu (structBUG sched_group *group) include/linux/sched.h:919:28 922:1 51038
+cpumask * sched_domain_span (structBUG sched_domain *sd) include/linux/sched.h:1010:31 1013:1 51061
+int test_sd_parent (structBUG sched_domain *sd,int flag) include/linux/sched.h:1023:19 1029:1 51082
+void prefetch_stack (structBUG task_struct *t) include/linux/sched.h:1060:20 1060:42 51129
+int rt_prio (int prio) include/linux/sched.h:1613:19 1618:1 51139
+int rt_task (structBUG task_struct *p) include/linux/sched.h:1620:19 1623:1 51169
+pid * task_pid (structBUG task_struct *task) include/linux/sched.h:1625:27 1628:1 51191
+pid * task_tgid (structBUG task_struct *task) include/linux/sched.h:1630:27 1633:1 51215
+pid * task_pgrp (structBUG task_struct *task) include/linux/sched.h:1640:27 1643:1 51243
+pid * task_session (structBUG task_struct *task) include/linux/sched.h:1645:27 1648:1 51271
+pid_t task_pid_nr (structBUG task_struct *tsk) include/linux/sched.h:1668:21 1671:1 51299
+pid_t task_pid_nr_ns (structBUG task_struct *tsk,structBUG pid_namespace *ns) include/linux/sched.h:1673:21 1677:1 51317
+pid_t task_pid_vnr (structBUG task_struct *tsk) include/linux/sched.h:1679:21 1682:1 51342
+pid_t task_tgid_nr (structBUG task_struct *tsk) include/linux/sched.h:1685:21 1688:1 51362
+pid_t task_tgid_vnr (structBUG task_struct *tsk) include/linux/sched.h:1692:21 1695:1 51380
+pid_t task_pgrp_nr_ns (structBUG task_struct *tsk,structBUG pid_namespace *ns) include/linux/sched.h:1698:21 1702:1 51402
+pid_t task_pgrp_vnr (structBUG task_struct *tsk) include/linux/sched.h:1704:21 1707:1 51427
+pid_t task_session_nr_ns (structBUG task_struct *tsk,structBUG pid_namespace *ns) include/linux/sched.h:1710:21 1714:1 51447
+pid_t task_session_vnr (structBUG task_struct *tsk) include/linux/sched.h:1716:21 1719:1 51472
+pid_t task_pgrp_nr (structBUG task_struct *tsk) include/linux/sched.h:1722:21 1725:1 51492
+int pid_alive (structBUG task_struct *p) include/linux/sched.h:1735:19 1738:1 51513
+int is_global_init (structBUG task_struct *tsk) include/linux/sched.h:1746:19 1749:1 51538
+void put_task_struct (structBUG task_struct *t) include/linux/sched.h:1764:20 1768:1 51559
+void rcu_copy_process (structBUG task_struct *p) include/linux/sched.h:1879:20 1881:1 51589
+int set_cpus_allowed (structBUG task_struct *p,cpumask_t new_mask) include/linux/sched.h:1914:19 1917:1 51599
+void enable_sched_clock_irqtime () include/linux/sched.h:1974:20 1974:1 51624
+void disable_sched_clock_irqtime () include/linux/sched.h:1975:20 1975:1 51630
+int get_sysctl_timer_migration () include/linux/sched.h:2028:28 2031:1 51636
+bool tsk_is_pi_blocked (structBUG task_struct *tsk) include/linux/sched.h:2071:20 2074:1 51646
+bool is_idle_task (structBUG task_struct *p) include/linux/sched.h:2103:20 2106:1 51666
+int kstack_end (void *addr) include/linux/sched.h:2123:19 2129:1 51687
+user_struct * get_uid (structBUG user_struct *u) include/linux/sched.h:2158:35 2162:1 51708
+int dequeue_signal_lock (structBUG task_struct *tsk,sigset_t *mask,siginfo_t *info) include/linux/sched.h:2187:19 2197:1 51735
+void restore_saved_sigmask () include/linux/sched.h:2224:20 2228:1 51835
+sigset_t * sigmask_to_save () include/linux/sched.h:2230:25 2236:1 51861
+int kill_cad_pid (int sig,int priv) include/linux/sched.h:2238:19 2241:1 51904
+int on_sig_stack (long unsigned int sp) include/linux/sched.h:2251:19 2260:1 51928
+int sas_ss_flags (long unsigned int sp) include/linux/sched.h:2262:19 2266:1 51972
+void mmdrop (structBUG mm_struct *mm) include/linux/sched.h:2275:20 2279:1 52003
+int get_nr_threads (structBUG task_struct *tsk) include/linux/sched.h:2352:19 2355:1 52040
+bool thread_group_leader (structBUG task_struct *p) include/linux/sched.h:2357:20 2360:1 52062
+int has_group_leader_pid (structBUG task_struct *p) include/linux/sched.h:2368:19 2371:1 52082
+int same_thread_group (structBUG task_struct *p1,structBUG task_struct *p2) include/linux/sched.h:2374:5 2377:1 52107
+task_struct * next_thread (structBUG task_struct *p) include/linux/sched.h:2379:35 2383:1 52136
+int thread_group_empty (structBUG task_struct *p) include/linux/sched.h:2385:19 2388:1 52176
+void task_lock (structBUG task_struct *p) include/linux/sched.h:2403:20 2406:1 52200
+void task_unlock (structBUG task_struct *p) include/linux/sched.h:2408:20 2411:1 52220
+sighand_struct * lock_task_sighand (structBUG task_struct *tsk,long unsigned int *flags) include/linux/sched.h:2416:38 2424:1 52240
+void unlock_task_sighand (structBUG task_struct *tsk,long unsigned int *flags) include/linux/sched.h:2426:20 2430:1 52279
+void threadgroup_change_begin (structBUG task_struct *tsk) include/linux/sched.h:2433:20 2436:1 52310
+void threadgroup_change_end (structBUG task_struct *tsk) include/linux/sched.h:2437:20 2440:1 52334
+void threadgroup_lock (structBUG task_struct *tsk) include/linux/sched.h:2462:20 2470:1 52358
+void threadgroup_unlock (structBUG task_struct *tsk) include/linux/sched.h:2478:20 2482:1 52398
+void setup_thread_stack (structBUG task_struct *p,structBUG task_struct *org) include/linux/sched.h:2495:20 2499:1 52438
+int * end_of_stack (structBUG task_struct *p) include/linux/sched.h:2501:30 2504:1 52483
+int object_is_on_stack (void *obj) include/linux/sched.h:2508:19 2513:1 52505
+void set_tsk_thread_flag (structBUG task_struct *tsk,int flag) include/linux/sched.h:2533:20 2536:1 52536
+void clear_tsk_thread_flag (structBUG task_struct *tsk,int flag) include/linux/sched.h:2538:20 2541:1 52561
+int test_and_set_tsk_thread_flag (structBUG task_struct *tsk,int flag) include/linux/sched.h:2543:19 2546:1 52586
+int test_and_clear_tsk_thread_flag (structBUG task_struct *tsk,int flag) include/linux/sched.h:2548:19 2551:1 52614
+int test_tsk_thread_flag (structBUG task_struct *tsk,int flag) include/linux/sched.h:2553:19 2556:1 52642
+void set_tsk_need_resched (structBUG task_struct *tsk) include/linux/sched.h:2558:20 2561:1 52670
+void clear_tsk_need_resched (structBUG task_struct *tsk) include/linux/sched.h:2563:20 2566:1 52686
+int test_tsk_need_resched (structBUG task_struct *tsk) include/linux/sched.h:2568:19 2571:1 52702
+int restart_syscall () include/linux/sched.h:2573:19 2577:1 52729
+int signal_pending (structBUG task_struct *p) include/linux/sched.h:2579:19 2582:1 52748
+int __fatal_signal_pending (structBUG task_struct *p) include/linux/sched.h:2584:19 2587:1 52775
+int fatal_signal_pending (structBUG task_struct *p) include/linux/sched.h:2589:19 2592:1 52810
+int signal_pending_state (long int state,structBUG task_struct *p) include/linux/sched.h:2594:19 2602:1 52839
+int need_resched () include/linux/sched.h:2604:19 2607:1 52896
+int spin_needbreak (spinlock_t *lock) include/linux/sched.h:2648:19 2655:1 52921
+void thread_group_cputime_init (structBUG signal_struct *sig) include/linux/sched.h:2663:20 2666:1 52934
+int task_cpu (structBUG task_struct *p) include/linux/sched.h:2684:28 2687:1 52957
+void add_rchar (structBUG task_struct *tsk,ssize_t amt) include/linux/sched.h:2735:20 2738:1 52981
+void add_wchar (structBUG task_struct *tsk,ssize_t amt) include/linux/sched.h:2740:20 2743:1 53016
+void inc_syscr (structBUG task_struct *tsk) include/linux/sched.h:2745:20 2748:1 53051
+void inc_syscw (structBUG task_struct *tsk) include/linux/sched.h:2750:20 2753:1 53071
+void mm_update_next_owner (structBUG mm_struct *mm) include/linux/sched.h:2780:20 2782:1 53091
+void mm_init_owner (structBUG mm_struct *mm,structBUG task_struct *p) include/linux/sched.h:2784:20 2786:1 53101
+int task_rlimit (structBUG task_struct *tsk,unsigned int limit) include/linux/sched.h:2789:29 2793:1 53115
+int task_rlimit_max (structBUG task_struct *tsk,unsigned int limit) include/linux/sched.h:2795:29 2799:1 53150
+int rlimit (unsigned int limit) include/linux/sched.h:2801:29 2804:1 53185
+int rlimit_max (unsigned int limit) include/linux/sched.h:2806:29 2809:1 53207
+void __css_get (structBUG cgroup_subsys_state *css,int count) include/linux/cgroup.h:93:20 96:1 53229
+void css_get (structBUG cgroup_subsys_state *css) include/linux/cgroup.h:105:20 110:1 53254
+bool css_is_removed (structBUG cgroup_subsys_state *css) include/linux/cgroup.h:112:20 115:1 53287
+bool css_tryget (structBUG cgroup_subsys_state *css) include/linux/cgroup.h:124:20 129:1 53314
+void css_put (structBUG cgroup_subsys_state *css) include/linux/cgroup.h:137:20 141:1 53354
+cgroup_subsys_state * cgroup_subsys_state (structBUG cgroup *cgrp,int subsys_id) include/linux/cgroup.h:540:43 544:1 53386
+cgroup_subsys_state * task_subsys_state (structBUG task_struct *task,int subsys_id) include/linux/cgroup.h:557:1 560:1 53411
+cgroup * task_cgroup (structBUG task_struct *task,int subsys_id) include/linux/cgroup.h:562:30 566:1 53444
+int mem_cgroup_newpage_charge (structBUG page *page,structBUG mm_struct *mm,gfp_t gfp_mask) include/linux/memcontrol.h:199:19 203:1 53472
+int mem_cgroup_cache_charge (structBUG page *page,structBUG mm_struct *mm,gfp_t gfp_mask) include/linux/memcontrol.h:205:19 209:1 53492
+int mem_cgroup_try_charge_swapin (structBUG mm_struct *mm,structBUG page *page,gfp_t gfp_mask,structBUG mem_cgroup **memcgp) include/linux/memcontrol.h:211:19 215:1 53512
+void mem_cgroup_commit_charge_swapin (structBUG page *page,structBUG mem_cgroup *memcg) include/linux/memcontrol.h:217:20 220:1 53537
+void mem_cgroup_cancel_charge_swapin (structBUG mem_cgroup *memcg) include/linux/memcontrol.h:222:20 224:1 53551
+void mem_cgroup_uncharge_start () include/linux/memcontrol.h:226:20 228:1 53561
+void mem_cgroup_uncharge_end () include/linux/memcontrol.h:230:20 232:1 53567
+void mem_cgroup_uncharge_page (structBUG page *page) include/linux/memcontrol.h:234:20 236:1 53573
+void mem_cgroup_uncharge_cache_page (structBUG page *page) include/linux/memcontrol.h:238:20 240:1 53583
+lruvec * mem_cgroup_zone_lruvec (structBUG zone *zone,structBUG mem_cgroup *memcg) include/linux/memcontrol.h:242:30 246:1 53593
+lruvec * mem_cgroup_page_lruvec (structBUG page *page,structBUG zone *zone) include/linux/memcontrol.h:248:30 252:1 53617
+mem_cgroup * try_get_mem_cgroup_from_page (structBUG page *page) include/linux/memcontrol.h:254:34 257:1 53641
+mem_cgroup * try_get_mem_cgroup_from_mm (structBUG mm_struct *mm) include/linux/memcontrol.h:259:34 262:1 53655
+int mm_match_cgroup (structBUG mm_struct *mm,structBUG mem_cgroup *memcg) include/linux/memcontrol.h:264:19 268:1 53669
+int task_in_mem_cgroup (structBUG task_struct *task,structBUG mem_cgroup *memcg) include/linux/memcontrol.h:270:19 274:1 53686
+cgroup_subsys_state * mem_cgroup_css (structBUG mem_cgroup *memcg) include/linux/memcontrol.h:277:4 280:1 53703
+int mem_cgroup_prepare_migration (structBUG page *page,structBUG page *newpage,structBUG mem_cgroup **memcgp,gfp_t gfp_mask) include/linux/memcontrol.h:283:1 287:1 53717
+void mem_cgroup_end_migration (structBUG mem_cgroup *memcg,structBUG page *oldpage,structBUG page *newpage,bool migration_ok) include/linux/memcontrol.h:289:20 292:1 53742
+mem_cgroup * mem_cgroup_iter (structBUG mem_cgroup *root,structBUG mem_cgroup *prev,structBUG mem_cgroup_reclaim_cookie *reclaim) include/linux/memcontrol.h:295:1 300:1 53763
+void mem_cgroup_iter_break (structBUG mem_cgroup *root,structBUG mem_cgroup *prev) include/linux/memcontrol.h:302:20 305:1 53785
+bool mem_cgroup_disabled () include/linux/memcontrol.h:307:20 310:1 53799
+int mem_cgroup_inactive_anon_is_low (structBUG lruvec *lruvec) include/linux/memcontrol.h:313:1 316:1 53808
+int mem_cgroup_inactive_file_is_low (structBUG lruvec *lruvec) include/linux/memcontrol.h:319:1 322:1 53821
+int mem_cgroup_get_lru_size (structBUG lruvec *lruvec,structBUG lru_list lru) include/linux/memcontrol.h:325:1 328:1 53834
+void mem_cgroup_update_lru_size (structBUG lruvec *lruvec,structBUG lru_list lru,int increment) include/linux/memcontrol.h:331:1 334:1 53850
+void mem_cgroup_print_oom_info (structBUG mem_cgroup *memcg,structBUG task_struct *p) include/linux/memcontrol.h:337:1 339:1 53866
+void mem_cgroup_begin_update_page_stat (structBUG page *page,bool *locked,long unsigned int *flags) include/linux/memcontrol.h:341:20 344:1 53880
+void mem_cgroup_end_update_page_stat (structBUG page *page,bool *locked,long unsigned int *flags) include/linux/memcontrol.h:346:20 349:1 53898
+void mem_cgroup_inc_page_stat (structBUG page *page,structBUG mem_cgroup_page_stat_item idx) include/linux/memcontrol.h:351:20 354:1 53916
+void mem_cgroup_dec_page_stat (structBUG page *page,structBUG mem_cgroup_page_stat_item idx) include/linux/memcontrol.h:356:20 359:1 53929
+int mem_cgroup_soft_limit_reclaim (structBUG zone *zone,int order,gfp_t gfp_mask,long unsigned int *total_scanned) include/linux/memcontrol.h:362:15 367:1 53942
+u64 mem_cgroup_get_limit (structBUG mem_cgroup *memcg) include/linux/memcontrol.h:370:5 373:1 53965
+void mem_cgroup_split_huge_fixup (structBUG page *head) include/linux/memcontrol.h:375:20 377:1 53978
+void mem_cgroup_count_vm_event (structBUG mm_struct *mm,structBUG vm_event_item idx) include/linux/memcontrol.h:380:6 382:1 53988
+void mem_cgroup_replace_page_cache (structBUG page *oldpage,structBUG page *newpage) include/linux/memcontrol.h:383:20 386:1 54001
+bool mem_cgroup_bad_page_check (structBUG page *page) include/linux/memcontrol.h:391:1 394:1 54015
+void mem_cgroup_print_bad_page (structBUG page *page) include/linux/memcontrol.h:397:1 399:1 54028
+void sock_update_memcg (structBUG sock *sk) include/linux/memcontrol.h:413:20 415:1 54038
+void sock_release_memcg (structBUG sock *sk) include/linux/memcontrol.h:416:20 418:1 54048
+int register_one_node (int nid) include/linux/node.h:50:19 53:1 54058
+int unregister_one_node (int nid) include/linux/node.h:54:19 57:1 54070
+int register_cpu_under_node (unsigned int cpu,unsigned int nid) include/linux/node.h:58:19 61:1 54082
+int unregister_cpu_under_node (unsigned int cpu,unsigned int nid) include/linux/node.h:62:19 65:1 54097
+int register_mem_sect_under_node (structBUG memory_block *mem_blk,int nid) include/linux/node.h:66:19 70:1 54112
+int unregister_mem_sect_under_nodes (structBUG memory_block *mem_blk,long unsigned int phys_index) include/linux/node.h:71:19 75:1 54128
+void register_hugetlbfs_with_node (node_registration_func_t reg,node_registration_func_t unreg) include/linux/node.h:77:20 80:1 54144
+int current_is_kswapd () include/linux/swap.h:27:19 30:1 54156
+void lru_cache_add_anon (structBUG page *page) include/linux/swap.h:245:20 248:1 54175
+void lru_cache_add_file (structBUG page *page) include/linux/swap.h:250:20 253:1 54191
+int zone_reclaim (structBUG zone *z,gfp_t mask,unsigned int order) include/linux/swap.h:277:19 280:1 54207
+int scan_unevictable_register_node (structBUG node *node) include/linux/swap.h:293:19 296:1 54226
+void scan_unevictable_unregister_node (structBUG node *node) include/linux/swap.h:297:20 299:1 54239
+int mem_cgroup_swappiness (structBUG mem_cgroup *mem) include/linux/swap.h:307:19 310:1 54249
+void mem_cgroup_uncharge_swap (swp_entry_t ent) include/linux/swap.h:315:20 317:1 54263
+void mem_cgroup_uncharge_swapcache (structBUG page *page,swp_entry_t ent,bool swapout) include/linux/swap.h:368:1 370:1 54272
+bool frozen (structBUG task_struct *p) include/linux/freezer.h:18:20 21:1 54288
+bool freezing (structBUG task_struct *p) include/linux/freezer.h:28:20 33:1 54310
+bool try_to_freeze () include/linux/freezer.h:44:20 50:1 54352
+void freezer_do_not_count () include/linux/freezer.h:79:20 82:1 54393
+void freezer_count () include/linux/freezer.h:88:20 92:1 54419
+int freezer_should_skip (structBUG task_struct *p) include/linux/freezer.h:97:19 100:1 54450
+void ssleep (unsigned int seconds) include/linux/delay.h:50:20 53:1 54472
+void kmemleak_init () include/linux/kmemleak.h:61:20 63:1 54488
+void kmemleak_alloc (void *ptr,size_t size,int min_count,gfp_t gfp) include/linux/kmemleak.h:64:20 67:1 54494
+void kmemleak_alloc_recursive (void *ptr,size_t size,int min_count,long unsigned int flags,gfp_t gfp) include/linux/kmemleak.h:68:20 72:1 54513
+void kmemleak_alloc_percpu (void *ptr,size_t size) include/linux/kmemleak.h:73:20 75:1 54535
+void kmemleak_free (void *ptr) include/linux/kmemleak.h:76:20 78:1 54548
+void kmemleak_free_part (void *ptr,size_t size) include/linux/kmemleak.h:79:20 81:1 54558
+void kmemleak_free_recursive (void *ptr,long unsigned int flags) include/linux/kmemleak.h:82:20 84:1 54571
+void kmemleak_free_percpu (void *ptr) include/linux/kmemleak.h:85:20 87:1 54584
+void kmemleak_not_leak (void *ptr) include/linux/kmemleak.h:88:20 90:1 54594
+void kmemleak_ignore (void *ptr) include/linux/kmemleak.h:91:20 93:1 54604
+void kmemleak_scan_area (void *ptr,size_t size,gfp_t gfp) include/linux/kmemleak.h:94:20 96:1 54614
+void kmemleak_erase (void **ptr) include/linux/kmemleak.h:97:20 99:1 54630
+void kmemleak_no_scan (void *ptr) include/linux/kmemleak.h:100:20 102:1 54641
+int kmalloc_index (size_t size) include/linux/slub_def.h:156:28 202:1 54651
+kmem_cache * kmalloc_slab (size_t size) include/linux/slub_def.h:210:43 218:1 54922
+void * kmalloc_order (size_t size,gfp_t flags,unsigned int order) include/linux/slub_def.h:224:1 229:1 54954
+void * kmalloc_large (size_t size,gfp_t flags) include/linux/slub_def.h:262:30 266:1 54992
+void * kmalloc (size_t size,gfp_t flags) include/linux/slub_def.h:268:30 284:1 55022
+void * kmalloc_array (size_t n,size_t size,gfp_t flags) include/linux/slab.h:243:21 248:1 55113
+void * kcalloc (size_t n,size_t size,gfp_t flags) include/linux/slab.h:256:21 259:1 55163
+void * kmalloc_node (size_t size,gfp_t flags,int node) include/linux/slab.h:272:21 275:1 55193
+void * __kmalloc_node (size_t size,gfp_t flags,int node) include/linux/slab.h:277:21 280:1 55219
+void * kmem_cache_alloc_node (structBUG kmem_cache *cachep,gfp_t flags,int node) include/linux/slab.h:284:21 288:1 55245
+void * kmem_cache_zalloc (structBUG kmem_cache *k,gfp_t flags) include/linux/slab.h:339:21 342:1 55272
+void * kzalloc (size_t size,gfp_t flags) include/linux/slab.h:349:21 352:1 55298
+void * kzalloc_node (size_t size,gfp_t flags,int node) include/linux/slab.h:360:21 363:1 55323
+int call_usermodehelper (char *path,char **argv,char **envp,int wait) include/linux/kmod.h:75:1 79:1 55353
+int usermodehelper_disable () include/linux/kmod.h:94:19 97:1 55393
+void usermodehelper_enable () include/linux/kmod.h:99:20 102:1 55406
+void fill_ldt (structBUG desc_struct *desc,structBUG user_desc *info) arch/x86/include/asm/desc.h:11:20 35:1 55416
+desc_struct * get_cpu_gdt_table (unsigned int cpu) arch/x86/include/asm/desc.h:48:35 51:1 55700
+void pack_gate (gate_desc *gate,unsigned char type,long unsigned int base,unsigned int dpl,unsigned int flags,short unsigned int seg) arch/x86/include/asm/desc.h:71:20 77:1 55770
+int desc_empty (void *ptr) arch/x86/include/asm/desc.h:81:19 86:1 55850
+void paravirt_alloc_ldt (structBUG desc_struct *ldt,unsigned int entries) arch/x86/include/asm/desc.h:108:20 110:1 55881
+void paravirt_free_ldt (structBUG desc_struct *ldt,unsigned int entries) arch/x86/include/asm/desc.h:112:20 114:1 55894
+void native_write_idt_entry (gate_desc *idt,int entry,gate_desc *gate) arch/x86/include/asm/desc.h:119:20 122:1 55907
+void native_write_ldt_entry (structBUG desc_struct *ldt,int entry,void *desc) arch/x86/include/asm/desc.h:124:20 127:1 55941
+void native_write_gdt_entry (structBUG desc_struct *gdt,int entry,void *desc,int type) arch/x86/include/asm/desc.h:130:1 141:1 55974
+void pack_descriptor (structBUG desc_struct *desc,long unsigned int base,long unsigned int limit,unsigned char type,unsigned char flags) arch/x86/include/asm/desc.h:143:20 152:1 56053
+void set_tssldt_descriptor (void *d,long unsigned int addr,unsigned int type,unsigned int size) arch/x86/include/asm/desc.h:155:20 173:1 56152
+void __set_tss_desc (unsigned int cpu,unsigned int entry,void *addr) arch/x86/include/asm/desc.h:175:20 191:1 56189
+void native_set_ldt (void *addr,unsigned int entries) arch/x86/include/asm/desc.h:195:20 209:1 56241
+void native_load_tr_desc () arch/x86/include/asm/desc.h:211:20 214:1 56329
+void native_load_gdt (structBUG desc_ptr *dtr) arch/x86/include/asm/desc.h:216:20 219:1 56344
+void native_load_idt (structBUG desc_ptr *dtr) arch/x86/include/asm/desc.h:221:20 224:1 56365
+void native_store_gdt (structBUG desc_ptr *dtr) arch/x86/include/asm/desc.h:226:20 229:1 56386
+void native_store_idt (structBUG desc_ptr *dtr) arch/x86/include/asm/desc.h:231:20 234:1 56407
+int native_store_tr () arch/x86/include/asm/desc.h:236:29 243:1 56428
+void native_load_tls (structBUG thread_struct *t,unsigned int cpu) arch/x86/include/asm/desc.h:245:20 252:1 56454
+void clear_LDT () arch/x86/include/asm/desc.h:270:20 273:1 56522
+void load_LDT_nolock (mm_context_t *pc) arch/x86/include/asm/desc.h:278:20 281:1 56533
+void load_LDT (mm_context_t *pc) arch/x86/include/asm/desc.h:283:20 288:1 56560
+int get_desc_base (structBUG desc_struct *desc) arch/x86/include/asm/desc.h:290:29 293:1 56575
+void set_desc_base (structBUG desc_struct *desc,long unsigned int base) arch/x86/include/asm/desc.h:295:20 300:1 56627
+int get_desc_limit (structBUG desc_struct *desc) arch/x86/include/asm/desc.h:302:29 305:1 56686
+void set_desc_limit (structBUG desc_struct *desc,long unsigned int limit) arch/x86/include/asm/desc.h:307:20 311:1 56724
+void _set_gate (int gate,unsigned int type,void *addr,unsigned int dpl,unsigned int ist,unsigned int seg) arch/x86/include/asm/desc.h:323:20 334:1 56768
+void set_intr_gate (unsigned int n,void *addr) arch/x86/include/asm/desc.h:342:20 346:1 56833
+void alloc_system_vector (int vector) arch/x86/include/asm/desc.h:352:20 361:1 56897
+void alloc_intr_gate (unsigned int n,void *addr) arch/x86/include/asm/desc.h:363:20 367:1 56989
+void set_system_intr_gate (unsigned int n,void *addr) arch/x86/include/asm/desc.h:372:20 376:1 57017
+void set_system_trap_gate (unsigned int n,void *addr) arch/x86/include/asm/desc.h:378:20 382:1 57081
+void set_trap_gate (unsigned int n,void *addr) arch/x86/include/asm/desc.h:384:20 388:1 57145
+void set_task_gate (unsigned int n,unsigned int gdt_entry) arch/x86/include/asm/desc.h:390:20 394:1 57209
+void set_intr_gate_ist (int n,void *addr,unsigned int ist) arch/x86/include/asm/desc.h:396:20 400:1 57274
+void set_system_intr_gate_ist (int n,void *addr,unsigned int ist) arch/x86/include/asm/desc.h:402:20 406:1 57342
+int mmap_is_ia32 () arch/x86/include/asm/elf.h:345:19 355:1 57410
+int elf_coredump_extra_notes_size () include/linux/elf.h:441:19 441:1 57424
+int elf_coredump_extra_notes_write (structBUG file *file,loff_t *foffset) include/linux/elf.h:442:19 443:4 57433
+int __check_old_set_param (void structBUG kernel_param *char *int *oldset) include/linux/moduleparam.h:199:1 202:1 57450
+bool arch_static_branch (structBUG static_key *key) arch/x86/include/asm/jump_label.h:14:29 26:1 57469
+jump_entry * jump_label_get_entries (structBUG static_key *key) include/linux/jump_label.h:87:27 91:1 57502
+bool jump_label_get_branch_default (structBUG static_key *key) include/linux/jump_label.h:93:20 98:1 57525
+bool static_key_false (structBUG static_key *key) include/linux/jump_label.h:100:29 103:1 57556
+bool static_key_true (structBUG static_key *key) include/linux/jump_label.h:105:29 108:1 57574
+bool static_branch (structBUG static_key *key) include/linux/jump_label.h:111:29 114:1 57597
+bool static_key_enabled (structBUG static_key *key) include/linux/jump_label.h:221:20 224:1 57615
+void tracepoint_synchronize_unregister () include/linux/tracepoint.h:82:20 85:1 57641
+int module_is_live (structBUG module *mod) include/linux/module.h:380:19 383:1 57650
+int within_module_core (long unsigned int addr,structBUG module *mod) include/linux/module.h:391:19 395:1 57671
+int within_module_init (long unsigned int addr,structBUG module *mod) include/linux/module.h:397:19 401:1 57715
+u32 page_to_balloon_pfn (structBUG page *page) drivers/virtio/virtio_balloon.c:75:12 82:1 57759
+page * balloon_pfn_to_page (u32 pfn) drivers/virtio/virtio_balloon.c:84:21 88:1 57788
+void balloon_ack (structBUG virtqueue *vq) drivers/virtio/virtio_balloon.c:90:13 95:1 57838
+void tell_host (structBUG virtio_balloon *vb,structBUG virtqueue *vq) drivers/virtio/virtio_balloon.c:97:13 111:1 57867
+void set_page_pfns (u32 *pfns,structBUG page *page) drivers/virtio/virtio_balloon.c:113:13 121:1 58039
+void fill_balloon (structBUG virtio_balloon *vb,size_t num) drivers/virtio/virtio_balloon.c:123:13 152:1 58102
+void release_pages_by_pfn (u32 *pfns,unsigned int num) drivers/virtio/virtio_balloon.c:154:13 163:1 58336
+void leak_balloon (structBUG virtio_balloon *vb,size_t num) drivers/virtio/virtio_balloon.c:165:13 187:1 58406
+void update_stat (structBUG virtio_balloon *vb,int idx,u16 tag,u64 val) drivers/virtio/virtio_balloon.c:189:20 195:1 58597
+void update_balloon_stats (structBUG virtio_balloon *vb) drivers/virtio/virtio_balloon.c:199:13 218:1 58684
+void stats_request (structBUG virtqueue *vq) drivers/virtio/virtio_balloon.c:228:13 234:1 58828
+void stats_handle_request (structBUG virtio_balloon *vb) drivers/virtio/virtio_balloon.c:236:13 252:1 58865
+void virtballoon_changed (structBUG virtio_device *vdev) drivers/virtio/virtio_balloon.c:254:13 259:1 58992
+s64 towards_target (structBUG virtio_balloon *vb) drivers/virtio/virtio_balloon.c:261:19 271:1 59021
+void update_balloon_size (structBUG virtio_balloon *vb) drivers/virtio/virtio_balloon.c:273:13 280:1 59085
+int balloon (void *_vballoon) drivers/virtio/virtio_balloon.c:282:12 305:1 59126
+int init_vqs (structBUG virtio_balloon *vb) drivers/virtio/virtio_balloon.c:307:12 340:1 59394
+int virtballoon_probe (structBUG virtio_device *vdev) drivers/virtio/virtio_balloon.c:342:12 378:1 59631
+void remove_common (structBUG virtio_balloon *vb) drivers/virtio/virtio_balloon.c:380:13 391:1 59892
+void virtballoon_remove (structBUG virtio_device *vdev) drivers/virtio/virtio_balloon.c:393:23 400:1 59983
+int virtballoon_freeze (structBUG virtio_device *vdev) drivers/virtio/virtio_balloon.c:403:12 414:1 60021
+int virtballoon_restore (structBUG virtio_device *vdev) drivers/virtio/virtio_balloon.c:416:12 428:1 60046
+int init () drivers/virtio/virtio_balloon.c:451:19 454:1 60113
+void fini () drivers/virtio/virtio_balloon.c:456:20 459:1 60128
